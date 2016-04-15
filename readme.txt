@@ -53,17 +53,6 @@ Date:   Fri Apr 15 10:43:22 2016 +0800
 
     readme.txtdddd
 
-[33mcommit 922953c6b21c1548b0f7f514ea78db3f073b372c[m
-Author: xgaoting@126.com <xgaoting@126.com>
-Date:   Fri Apr 15 09:56:26 2016 +0800
-
-    readme.txt第三次whnt
-
-[33mcommit e7f8b11040575437f75cce2ca6f48c00fb62198c[m
-Author: xgaoting@126.com <xgaoting@126.com>
-Date:   Fri Apr 15 09:53:04 2016 +0800
-
-    readme.txt修改
 
 [33mcommit fb23736331b143434d472ffa3f0b7cec1aa60ee2[m
 Author: xgaoting@126.com <xgaoting@126.com>
