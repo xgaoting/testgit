@@ -64,9 +64,3 @@ Author: xgaoting@126.com <xgaoting@126.com>
 Date:   Fri Apr 15 09:53:04 2016 +0800
 
     readme.txt修改
-
-[33mcommit fb23736331b143434d472ffa3f0b7cec1aa60ee2[m
-Author: xgaoting@126.com <xgaoting@126.com>
-Date:   Fri Apr 15 09:46:38 2016 +0800
-
-    readme.txt
