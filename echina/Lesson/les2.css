@@ -1,0 +1,201 @@
+body,html{
+    line-height: 1.75em;
+    background: #ebebeb;
+    color: #505050;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+}
+.main-header{
+    text-align: center;
+    background-image: url("http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg");
+    padding: 60px;
+    background-size: 100% 250%;
+    background-repeat: no-repeat;
+
+}
+.main-header .branding img{
+    max-width: 100%;
+}
+.main-header .branding{
+    font-size: 3.5em;
+    color: #444443;
+}
+a{
+    color: #e67e22;
+    text-decoration: none;
+    outline: none;
+}
+a:active,a:focus,a img{
+    outline: none;
+}
+.main-navigation{
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.main-navigation .menu{
+    margin: 0;
+    padding: 0;
+}
+.main-navigation .menu li.nav-current{
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: -2px;
+}
+.main-navigation .menu li{
+    display: inline-block;
+    list-style: none;
+    padding: 18px 0;
+}
+.main-navigation .menu li a{
+    padding: 0 21px;
+    color: #505050;
+}
+.post{
+    background: #ffffff;
+    margin-bottom: 35px;
+    padding: 35px 40px 0 40px;
+    overflow: hidden;
+    position: relative;
+}
+.post .post-header{
+    text-align: center;
+    line-height: 2em;
+}
+.post .post-header .title{
+    margin-top: 0;
+}
+.post .post-header .title a{
+    color: #202020;
+}
+.post .post-header .title a:hover{
+    text-decoration: none;
+}
+.post .post-header .post-meta{
+    color: #959595;
+}
+.post .post-content{
+   font: 400 20px/1.68 "Glyphicons Halflings";
+    line-height: 1.5em;
+    margin-top:20px;
+    margin-bottom: 25px;
+}
+.btn{
+    border-radius: 2px;
+    padding: 7px 14px ;
+}
+.btn-default{
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+.post-footer{
+    color: #959595;
+    padding: 30px 0;
+    border-top: 1px solid #e2e2e2;
+}
+
+.post-footer a{
+    color: #959595;
+    padding: 0 4px;
+}
+.post-footer a:hover{
+    color: #e67e22;
+}
+.aside .widget{
+   background: #ffffff;
+    margin-bottom: 35px;
+    padding: 15px 30px;
+    line-height: 2em;
+}
+.aside .widget .title{
+    margin-top: 0px ;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e67e22;
+    width: 100px;
+    font-size: 20px;
+}
+.widget .post-renct{
+    margin-top: 20px;
+}
+.widget .btn-store{
+    margin-top:20px;
+}
+.widget .tag-list{
+    line-height: 1em;
+}
+.widget .tag-list a{
+    display: inline-block;
+    color: #959595;
+    border: 1px solid #e2e2e2;
+    padding: 5px 10px;
+    margin:3px 3px; ;
+}
+.widget .tag-list a:hover{
+    text-decoration: none;
+    background: #e67e22;
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.main-footer{
+    background: #202020;
+    padding:30px 35px ;
+}
+.main-footer .widget{
+    padding: 0px 30px;
+}
+.main-footer .widget .head{
+    color: #ffffff;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e67e22;
+    font-size: 20px;
+    width: 90px;
+}
+.widget .renct-content{
+    padding: 10px 0 20px;
+    border-bottom: 1px dashed #505050;
+}
+.renct-content a{
+    color: #959595;
+    font-size: 15px;
+}
+.renct-content a:hover{
+    text-decoration: none;
+    color: #e67e22;
+}
+.widget .tag-cloud{
+    margin-top: 20px;
+}
+.widget .tag-cloud a{
+    display: inline-block;
+    border: 1px solid #505050;
+    color: #959595;
+    padding: 1px 4px;
+    margin:3px 4px ;
+}
+.widget .tag-cloud a:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background: #e67e22;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+.widget .frend-link{
+    margin-top: 10px;
+}
+.widget .frend-link a{
+    display: inline-block;
+    color: #959595;
+    margin: 15px 20px 0 0;
+    font-size: 15px;
+}
+.widget .frend-link hr{
+    margin: 2em 0 1.5em 0;
+    border-top: 1px dashed #505050;
+}
+.widget .frend-link a:hover{
+    text-decoration: none;
+    color: #e67e22;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>修改字体尺寸不变</title>
+    <!--由于字体大小都是一样的，所以我们需要font-size-adjust来调整其大小使其保持一样-->
+   <!--font-size-adjust的算法：通过高度和尺寸来计算 x-height：58  font-size:100px aspect:0.58 -->
+    <!--浏览器的计算方式：c=(a/b) s a代表aspect的值，b代表修改前aspect的值，s代表尺寸，c代表实际浏览器的尺寸-->
+    <style>
+        div{
+            font-size: 16px;
+        }
+        #div1{
+           font-family: Arial, Helvetica, sans-serif;
+            font-size-adjust: 0.60;
+        }
+        #div2{
+            font-family: "Bookman", 微软, "Times New Roman";
+            font-size-adjust:2;
+        }
+        #div3{
+            font-family: 'Lato', sans-serif;
+            font-size-adjust: 0.57;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">THE SIMPLE</div>
+<div id="div2">THE SIMPLE</div>
+<div id="div3">THE SIMPLE</div>
+</body>
+</html>

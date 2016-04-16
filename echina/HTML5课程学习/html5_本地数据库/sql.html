@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>sqllite本地数据库</title>
+</head>
+<body>
+    <!--
+        1.创建访问本地数据库
+        2.使用事务处理
+    -->
+    <img src="../images/html5本地数据库.png">
+<script>
+    var db = openDatabase("mydb","1.0","test db",1024*100);
+    db.transaction(function(tx){
+        tx.executeSql("")
+    })
+    //a,b,c,d,a是执行sql的语句，b是参数的数组，c是成功后的回调函数，d是失败后的回调函数
+    transaction.executeSql("",[],function(){},function(){});
+    //用对象rows属性来获取，rows.length rows[index]
+</script>
+</body>
+</html>

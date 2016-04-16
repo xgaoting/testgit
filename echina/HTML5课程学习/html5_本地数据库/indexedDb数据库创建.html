@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>indexDB数据库的创建</title>
+    <script>
+        window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+        window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
+        window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
+        window.IDBCursor = window.IDBCursor || window.webkitIDBCursor || window.msIDBCursor;
+        function CreateObjectStore(){
+            var dbName = "indexDBTest";
+            var dbVerion = 3;
+            var idb;
+            var dbConntect = indexedDB.open(dbName,dbVerion);
+            dbConntect.onsuccess = function(e){
+                idb = e.target.result;
+                alert("数据库链接成功");
+            }
+            dbConntect.onerror = function(){
+                alert("数据库链接失败");
+            }
+            dbConntect.onupgradeneeded = function(e){
+                idb = e.target.result;
+                var name = "user";
+               var optionalParameters = {
+                   keyPath:"userid",
+                   autoIncrement:false
+               };
+                var store = idb.createObjectStore(name,optionalParameters);
+                alert("对象数据库创建成功");
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="创建数据库" onclick="CreateObjectStore()">
+</body>
+</html>

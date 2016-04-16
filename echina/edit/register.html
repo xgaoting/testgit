@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>用户注册</title>
+    <style type="text/css">
+        .content{
+            margin-top: 100px;;
+        }
+    </style>
+</head>
+<body>
+<header class="main-head">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" title="这是一个图标" href="#">
+                    <img src="images/icon.png" style="width: 100px;">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">简介</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+                <a href="#" class="btn btn-default navbar-btn navbar-right">注册</a>
+                <form class="navbar-form navbar-right" role="search">
+                    <input type="text" class="form-control" placeholder="请输入搜索内容">
+                    <button type="button" class="btn btn-default">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="content">
+    <div class="container">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="register">
+                <h2 class="title">用户注册</h2>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">用户名</label>
+                        <input type="text" class="form-control" name="user.username" id="exampleInputEmail1" placeholder="用户名">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">密码</label>
+                        <input type="password" class="form-control" name="user.password" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">确认密码</label>
+                        <input type="password" class="form-control" name="conpassowrd" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn btn-default">保存</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(".navbar-nav a").click(function(e){
+        $(this).tab("show");
+    })
+</script>
+</body>
+
+</html>

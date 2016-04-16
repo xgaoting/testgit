@@ -1,0 +1,39 @@
+.shucai{
+    margin-top: 10px;
+}
+.img{
+    width: 120px;
+    float: left;
+    margin-right: 20px;
+}
+.detail{
+    margin-top: 15px;
+    float: left;
+}
+.jiahao{
+    width: 25px;
+    margin:60px 0 0 -50px;
+}
+.num{
+    color: #909090;
+}
+.container{
+    padding-left: 5px;
+}
+@media (max-width:768px) {
+   .jiahao{
+       width: 25px;
+       margin-top: 40px;
+       margin-left: -20px;
+   }
+    .img{
+        width: 100px;
+        float: left;
+        margin-right: 5px;
+    }
+    .detail{
+        float: left;
+        margin-top: -1px;
+    }
+
+}

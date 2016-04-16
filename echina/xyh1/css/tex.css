@@ -1,0 +1,50 @@
+h1{
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    margin:0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px grey;
+    font-size: 30px;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+.text{
+    width: 96%;
+    margin: 60px auto;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+.text h3{
+    margin-top: 20px;
+    color: green;
+}
+@media (min-width: 480px) {
+    .text{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-gap: 10px;
+        -moz-column-gap: 10px;
+        column-gap: 10px;
+        -webkit-column-rule: 1px dashed #000;
+        -moz-column-rule: 1px dashed #000;
+        column-rule: 1px dashed #000;
+    }
+}
+@media (min-width: 768px) {
+    .text{
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-gap: 20px;
+        -moz-column-gap: 20px;
+        column-gap: 20px;
+        -webkit-column-rule: 1px dashed grey;
+        -moz-column-rule: 1px dashed grey;
+        column-rule: 1px dashed grey;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1">
+    <title>分页</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <ul class="pagination pagination-lg" id="mytab">
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pagination">
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pagination pagination-sm">
+            <li class="disabled">
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pager">
+            <li><a href="#" aria-label="Previous">上一页</a></li>
+            <li><a href="#" aria-label="next">下一页</a></li>
+        </ul>
+    </nav>
+    <nav>
+        <ul class="pager">
+            <li class="previous disabled"><a href="#"><span aria-hidden="true">&larr;</span></a></li>
+            <li class="next"><a href="#"><span aria-hidden="true">&rarr;</span>下一页</a></li>
+        </ul>
+    </nav>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $("#mytab a").click(function(E){
+        $(this).tab("show");
+    })
+</script>
+</body>
+</html>

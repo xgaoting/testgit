@@ -1,0 +1,11 @@
+.myheading{
+    background: #000000;
+}
+.myfoot{
+    text-align: center;
+    border-top: 1px solid #e3e3e3;
+    color:#767676;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 25px;
+}

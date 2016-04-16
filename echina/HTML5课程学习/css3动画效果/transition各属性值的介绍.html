@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transition各属性值的介绍</title>
+    <style>
+        div{
+            text-align: center;
+            width: 30%;
+            background-color: aqua;
+        }
+        /*linear动画开始到结束的时候   匀速
+        ease-in 动画开始到结束的时候   由慢到快
+        ease-out 动画开始到结束的时候   由快到慢
+        ease 动画开始到结束的时候   由慢到快再到慢
+        ease-in-out 动画开始到结束的时候  由慢到快再到慢
+        */
+        div:hover{
+            -webkit-animation: anim 5s linear;
+        }
+        @-webkit-keyframes anim{
+            0%{
+                background-color: aqua;
+                transform: rotate(0deg);
+            }
+            30%{
+                background-color: #005AA0;
+                transform: rotate(30deg);
+            }
+            60%{
+                background-color: #006600;
+                transform: rotate(-30deg);
+            }
+            100%{
+                background-color: aqua;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div>实力文字</div>
+</body>
+</html>

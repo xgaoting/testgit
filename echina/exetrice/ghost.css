@@ -1,0 +1,195 @@
+html,body{
+    background: #ebebeb;
+    color: #505050;
+    line-height: 1.75em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+}
+.main-header{
+    text-align: center;
+    background-image: url("http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg");
+    background-size: 100% 250%;
+    background-repeat: no-repeat;
+    padding: 42px 0;
+}
+.main-header .branding{
+    font-size: 3.5em;
+    color: #505050;
+}
+a:active,a:focus,a img{
+    outline: none;
+    text-decoration: none;
+}
+a{
+    color: #e67e22;
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: #e67e22;
+}
+.main-header .branding img{
+    max-width: 100%;
+}
+.main-navigation{
+    text-align: center;
+    margin-bottom: 35px;
+    background: #ffffff;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+}
+.main-navigation .menu{
+    margin: 0;
+    padding: 0;
+}
+.main-navigation .menu li.nav-current{
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: -2px;
+}
+.main-navigation .menu li{
+    list-style: none;
+    padding: 18px 0;
+    display: inline-block;
+}
+.main-navigation .menu li a{
+    color: #202020;
+    padding: 0 21px;
+}
+.main-navigation .menu li a:hover{
+    color: #e67e22;
+}
+.post{
+    padding: 42px 21px;
+    background: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+    overflow: hidden;
+}
+.post .post-head{
+    text-align: center;
+    line-height: 2em;
+    margin-top: 0;
+    padding-bottom: 7px;
+}
+.post .post-head .post-title{
+    padding: 14px 0;
+    font-size: 2.5em;
+}
+.post .post-head .post-title a{
+    color: #202020;
+}
+.post .post-head .post-meta{
+    color: #959595;
+}
+.post .post-content{
+    font: 400 20px/1.62 "Glyphicons Halflings";
+    line-height: 1em;
+    padding: 20px;
+}
+.post .post-content p{
+    line-height: 1.2em;
+    margin:7px 0;
+}
+.post .post-premalink{
+    margin:0px 20px;
+}
+.btn-default{
+    border: 1px solid #e67e22;
+    background: #e67e22;
+    padding: 7px 14px;
+}
+.btn{
+    border-radius: 2px;
+    color: #ffffff;
+}
+.btn:hover{
+    background: #505050;
+    color: #ffffff;
+}
+.post .post-footer{
+    margin:0px 20px;
+}
+.fa-floder-open-o{
+    color: #959595;
+    padding: 0 7px 0 0;
+}
+.post .post-footer{
+    margin-top: 30px;
+    border-top: 1px solid #ebebeb;
+}
+.post .post-footer .tag-list a{
+   color: #959595;
+    padding: 0px 2px;
+}
+.post .post-footer .tag-list a:hover{
+    color: #e67e22;
+}
+.sidebar .widget{
+  background: #ffffff;
+    margin-bottom: 35px;
+    padding: 30px 21px;
+}
+.sidebar .widget .tag-cloud a{
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    padding: 2px 7px;
+    color: #959595;
+    margin:2px 3px ;
+}
+
+.sidebar .widget .tag-cloud a:hover{
+   background: #e67e22;
+    color: #ffffff;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+}
+.main-footer{
+    background: #202020;
+    padding: 30px 14px ;
+    margin-bottom: 35px;
+}
+.main-footer .widget{
+    padding: 0px 20px;
+}
+.main-footer .widget a{
+    color: #959595;
+}
+.main-footer .widget .title{
+    color: #ffffff;
+    border-bottom: 1px solid #e67e22;
+    width: 100px;
+    margin: 0px 0px 20px 0 ;
+    padding-bottom: 10px;
+    font-size: 1.5em;
+}
+.widget .recent-post .recent-single-post{
+    margin-bottom: 10px;
+    padding-bottom: 20px ;
+    border-bottom: 1px dashed #505050;
+}
+.widget .tag-cloud a{
+    display: inline-block;
+    border: 1px solid #505050;
+    padding: 2px 7px;
+    margin: 2px 4px;
+}
+.widget .tag-cloud a:hover{
+    background: #e67e22;
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.main-footer .widget .friend-links a{
+    display: inline-block;
+    padding: 2px 5px;
+    margin:3px 0px;
+}
+.friend-links a:hover{
+    color: #e67e22;
+}
+.main-footer .widget .friend-links hr{
+    border: 1px dashed #505050;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+

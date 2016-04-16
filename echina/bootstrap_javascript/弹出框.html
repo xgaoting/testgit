@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>弹出框</title>
+</head>
+<body>
+<a role="button" class="btn btn-primary btn-lg js-popover" data-trigger="focus" data-container="body" data-placement="bottom" data-toggle="popover" data-content="这是内容" tabindex="0" title="标题">点击出现弹出框</a>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+$("[data-toggle='popover']").popover()
+/*$("[data-toggle='popover']").popover("show")*/
+$(".js-popover").on("hidden.bs.popover",function(e){
+    alert("媳妇")
+})
+</script>
+</body>
+</html>

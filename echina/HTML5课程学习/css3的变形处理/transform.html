@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transform</title>
+    <style>
+        div{
+            width: 300px;
+            background-color: #269abc;
+            margin:150px auto;
+            text-align: center;
+            /*四个功能：旋转  缩放  移动  倾斜,以下所有都要进行浏览器的适配*/
+            /*transform: rotate(45deg);旋转*/
+            /*transform: scale(3.5);缩放*/
+            /*transform: skew(30deg,30deg);倾斜，第一个为X轴方向的倾斜，第二个是垂直方向的倾斜*/
+        transform: translate(-150px);/*这是移动，一个参数为X轴方向的移动，两个参数为一个是X轴方向的，一个是Y轴方向的移动*/
+        }
+    </style>
+</head>
+<body>
+<div>示例文字</div>
+</body>
+</html>

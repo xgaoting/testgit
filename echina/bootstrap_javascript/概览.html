@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title></title>
+</head>
+<body>
+<div class="dropdown">
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" >
+        下拉菜单<span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" role="menu">
+        <li role="presentation"><a href="#" tabindex="-1" role="menuitem">你说呢</a></li>
+        <li role="presentation"><a href="#" tabindex="-1" role="menuitem">你说呢</a></li>
+        <li role="presentation"><a href="#" tabindex="-1" role="menuitem">你说呢</a></li>
+        <li role="presentation"><a href="#" tabindex="-1" role="menuitem">你说呢</a></li>
+    </ul>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js" ></script>
+<script>
+   /* $(document).off(".data-api")*/
+    $(function(){
+       /* $(document).off(".dropdown.data-api");*/
+    })
+    alert($.fn.tooltip.Constructor.VERSION);
+</script>
+</body>
+</html>

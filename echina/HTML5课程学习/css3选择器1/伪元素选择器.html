@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+        <!---->
+        p:first-line{
+            color: #006600;
+        }
+        p:first-letter{
+            color: red;
+        }
+        li:before{
+            content: "或许吧";
+            color: #909090;
+            font-size: 10px;
+        }
+        li:after{
+            content: "这不是列表的一部分";
+            color: #959595;
+            font-size: 15px;;
+        }
+    </style>
+</head>
+<body>
+<p>这是第一行人文字<br>这是第二行的文字</p>
+<ul>
+    <li>one</li>
+    <li>one</li>
+    <li>one</li>
+    <li>one</li>
+    <li>one</li>
+</ul>
+</body>
+</html>

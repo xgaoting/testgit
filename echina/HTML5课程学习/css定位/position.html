@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>posititon</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .position{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: relative;
+            left: 20px;
+            top: 20px;
+            z-index: 1;
+        }
+        .position1{
+            width: 100px;
+            height: 100px;
+            background-color: #0066CC;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            z-index: 2;
+        }
+        .position2{
+            width: 100px;
+            height: 100px;
+            background-color: #00FF00;
+            position: relative;
+            left: 5px;
+            top: 5px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+<!--
+     position如果设置成static，left,top,right,bottom偏移量和z-index是不起任何作用的
+-->
+<div class="position"></div>
+<div class="position1"></div>
+<div class="position2"></div>
+<script>
+    for(var i =0;i<100;i++){
+        document.write(i+"<br/>")
+    }
+</script>
+</body>
+</html>

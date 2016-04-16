@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>输入框组</title>
+</head>
+<body>
+<div class="container">
+    <div class="input-group" role="group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="username" aria-describedby="basic-addon1">
+    </div>
+    <div class="input-group" role="group">
+        <input type="text" placeholder="Recipient's username" class="form-control" aria-describedby="...">
+        <span class="input-group-addon" id="basic-addon2">@example.com</span>
+    </div>
+    <div class="input-group" role="group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" placeholder="请输入金额" aria-describedby="Amount (to the nearest dollar)">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <!-- 尺寸 -->
+    <hr>
+    <div class="input-group input-group-lg" role="group">
+        <span class="input-group-addon ">@</span>
+        <input class="form-control" type="text" placeholder="Username" aria-describedby="sizing-addon1">
+    </div>
+    <div class="input-group" role="group">
+        <span class="input-group-addon ">@</span>
+        <input class="form-control" type="text" placeholder="Username" aria-describedby="sizing-addon2">
+    </div>
+    <div class="input-group input-group-sm" role="group">
+        <span class="input-group-addon ">@</span>
+        <input class="form-control" type="text" placeholder="Username" aria-describedby="sizing-addon3">
+    </div>
+    <!-- 多选框，单选框 -->
+    <br>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+              <span class="input-group-addon">
+                  <input type="checkbox" aria-label="...">
+              </span>
+                <input type="text" class="form-control" aria-label="...">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                    <span class="input-group-addon">
+                        <input type="radio" aria-label="...">
+                    </span>
+                <input type="text" class="form-control" aria-label="...">
+            </div>
+        </div>
+    </div>
+    <!-- 做为额外元素的按钮  -->
+    <hr>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default">Go!</button>
+                </span>
+                <input type="text" class="form-control" aria-label="..." placeholder="Search for..." >
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="..." placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button type="button" aria-label="..." class="btn btn-default">Go!</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- 使用额外元素的按钮式下拉菜单-->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"  >
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" aria-describedby="...">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" aria-label="..." data-toggle="dropdown">
+                        Action
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--作为额外元素的分裂式按钮下拉菜单 -->
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">Action</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="seperator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="input-group" role="group">
+                <input type="text" class="form-control">
+                <div class="input-group-btn dropup" >
+                    <button type="button" class="btn btn-default">Action</button>
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="seperator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>文本样式</title>
+    <style>
+        .test{
+            margin-left: 50px;
+        }
+        .test h1{
+            text-indent: -1em;/*文本缩进*/
+        }
+       #text{
+           text-transform: capitalize;
+       }
+        #text1{
+            text-transform: lowercase;
+        }
+        #text2{
+            text-transform: uppercase;
+        }
+        .test1 p{
+            text-wrap: normal;/*文字换行*/
+            width: 150px;
+        }
+        .test3 p{
+            text-shadow: 0px 0px 12px red;/*文本阴影效果*/
+            direction: rtl;/*文字居左或居右*/
+        }
+    </style>
+</head>
+<body>
+<div class="test">
+    <h1>静夜思</h1>
+    <p>窗前明月光</p>
+    <p>窗前明月光</p>
+    <p>窗前明月光</p>
+    <p>窗前明月光</p>
+</div>
+<div class="test1">
+    <p> this is my web page  this is my web page  this is my web page  this is my web page  this is my web page  this is my web page  this is my web page  this is my web page  this is my web page </p>
+</div>
+<div class="test2">
+    <p id="text1"> This iS my pAge </p>
+    <p id="text2"> this is my page </p>
+    <p id="text"> this is my page </p>
+</div>
+<div class="test3">
+    <p>这是一个测试</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,211 @@
+h1,h3,button,a{
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+}
+body{
+    position: relative;
+}
+.side-nav{
+    top:40%;
+    position: fixed;
+    right: 20px;
+    z-index: 1;
+}
+.side-nav ul.nav-side-nav{
+    text-align: center;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.side-nav ul.nav-side-nav li{
+    display: block;
+    margin: 0;
+    padding: 8px ;
+    line-height: 1.45em;
+}
+.side-nav ul.nav-side-nav li a{
+    display: block;
+    background: #ffffff;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.onepage{
+    height: 700px;
+}
+.onepage-bg{
+    background-image: url("imges/onepage-bg.png");
+    background-repeat: no-repeat;
+    height: 800px;
+    background-position: center center;
+    background-size: cover;
+}
+.onepage-text{
+    margin:150px 0 0 50px;
+}
+.onepage-title{
+    font-size: 70px;
+    color: #ffffff;
+    line-height: 0.9em;
+}
+.onepage-text .content{
+    margin-top: 50px;
+    line-height: 40px;
+    color: #ffffff;
+}
+.twopage{
+    height: 500px;
+    background: #ffffff;
+    margin-top: 180px;
+    text-align: center;
+    position: relative;
+}
+.twopage-title{
+    margin-left: 120px;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+.twopage-title img{
+    width: 120px;
+    margin-top: -20px;
+}
+.twopage-content{
+    margin-left: 0;
+    margin-right: 0;
+    position: relative;
+}
+.twopage-content .widget{
+    float: left;
+    padding: 0 2px 0 0px;
+    overflow: hidden;
+    position: relative;
+}
+.twopage-content a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.twopage-content img{
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+}
+.classion h3{
+     margin-top: 100px;
+    color: #d1e973;
+}
+.classion p{
+    font-size: 30px;
+    color: #e67e22;
+}
+.classion{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: #d1e973;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+.classion:hover{
+    background: #1eb450;
+    opacity: 0.9;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    width: 100%;
+    height: 100%;
+}
+.twopagebtn{
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.threepage-bg{
+    background-image: url("imges/three.jpg");
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 250px;
+    position: relative;
+}
+.threepage-head{
+    text-align: center;
+}
+.threepage-title{
+    padding-top: 150px;
+    color: #e67e22;
+}
+.threepage-head p{
+    line-height: 2.5em;
+    color: #000000;
+    margin-top: 30px;
+}
+.threepagebtn{
+    text-align: center;
+    margin-top: 350px;
+}
+.btn-lg{
+    font-size: 25px;
+}
+.fourpage{
+    height: 700px;
+    background-image: url("imges/four.jpg");
+    margin-top: 0px;
+}
+.fourpage-bg{
+    background-image: url("imges/four-1.jpg");
+    background-size: 100% 200%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.fourpage-title{
+    text-align: center;
+    color: #ffffff;
+}
+.fourpage-title h2{
+    font-size:40px ;
+    padding-top: 80px;
+}
+.fourpage-title p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.carousel-caption {
+    top:40%
+}
+.slide{
+    margin-top:100px;
+}
+.fivepage-bg{
+    text-align: center;
+    height: 800px;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+#fivepagebg{
+    background-image: url("imges/fivebg.jpg");
+}
+.fivepage-title{
+    color: #ffffff;
+    margin: 70px 0 70px 0;
+}
+.qiyeicon{
+    width: 200px;
+}
+.qiyeicon:hover{
+    border: 2px solid #ebebeb;
+}
+.fivepagebtn{
+    font-size: 25px;
+    margin-top:150px;
+}
+.fivepage p{
+    color: #e67e22;
+    margin-top: 20px;
+}
+

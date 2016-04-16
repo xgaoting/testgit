@@ -1,0 +1,27 @@
+body{
+    background-color: #e1e1e1;
+    margin:0px;
+}
+.detail .detail_header{
+    margin:10px auto ;
+}
+.detail h1{
+    display: inline;
+    border-left:5px solid #000000 ;
+    padding: 0px 15px ;
+    float: left;
+    font-size: 30px;
+}
+.detail .detail_header .incon{
+    float: left;
+    margin-top: 22px;
+    font-size: 25px;
+}
+.detail .detail_header .incon span{
+    margin-right: -18px ;
+    padding: 0px;
+}
+.detail .content{
+    padding-top: 30px;
+    clear: both;
+}

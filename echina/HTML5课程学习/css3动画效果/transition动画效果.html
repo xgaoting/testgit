@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transition动画效果</title>
+    <style>
+        div{
+            /*transition是三个属性值transitotn:property time time-function;第一个是要执行
+            的属性值，第二个是动画执行的时间，第三个是动画执行的方式*/
+            background-color: aqua;
+            width: 100px;
+            color: #ffffff;
+           /* transition:background 5s linear;*/
+            /*可以分开来*/
+            /*transition-property: background-color;
+            transition-duration: 5s;
+            transition-timing-function: linear;*/
+            /*可以一次实现多个功能*/
+            transition: background-color 1s linear,width 3s linear,transform 5s linear,color 8s linear;
+        }
+        div:hover{
+            background-color: #ff0000;
+            width: 200px;
+            transform:translate(300px,300px) rotate(360deg);
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+<div>示例文字</div>
+</body>
+</html>

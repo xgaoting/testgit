@@ -1,0 +1,207 @@
+html,body{
+    background: #ebebeb;
+    line-height: 1.75em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+    color:#303030;
+}
+.main-header{
+    background-repeat: no-repeat;
+    background: #ffffff;
+    background-image: url("http://static.ghostchina.com/image/6/d1/fcb3879e14429d75833a461572e64.jpg");
+    background-size: 100% 240%;
+    padding: 62px 0;
+    text-align: center;
+}
+.main-header .branding{
+    font-size: 2.5em;
+    color:#505050;
+}
+.main-header .branding img{
+    max-width: 100%;
+}
+a{
+    color: #e67e22;
+    text-decoration: none;
+}
+a:active,a:focus,a img{
+    outline: none;
+    text-decoration: none;
+}
+a:hover{
+   text-decoration: none;
+}
+.main-navigation{
+    text-align: center;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 2px solid #e1e1e1;
+    background: #ffffff;
+    margin-bottom: 35px;
+}
+.main-navigation .menu{
+    padding: 0;
+    margin: 0;
+}
+.main-navigation .menu li.nav-current{
+    border-bottom: 2px solid #e67e22;
+    margin-bottom: -2px;
+}
+.main-navigation .menu li{
+    list-style: none;
+    line-height: 4em;
+    display: inline-block;
+    position: relative;
+}
+.main-navigation .menu li a{
+    padding: 0 21px;
+    color: #444443;
+}
+.main-navigation .menu li a:hover{
+   color: #e67e22;
+}
+.post{
+    background: #ffffff;
+    padding: 35px;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+.post .post-header{
+    text-align: center;
+    margin: 0;
+}
+.post .post-header .post-title{
+     padding: 4px 7px;
+     font-size: 2.5em;
+     line-height: 1em;
+ }
+.post .post-header .post-title a{
+    color: #303030;
+}
+.post .post-header .post-meta{
+    color: #959595;
+}
+.post .post-content{
+    margin:20px 0px ;
+    font:400 18px/1.62 "Glyphicons Halflings";
+    padding:0px 12px;
+}
+.post .post-content p{
+    font-size: 0.95em;
+}
+.btn-default{
+    background: #e67e22;
+    border: 1px solid #e67e22;
+    color: #ffffff;
+}
+.btn{
+    padding: 7px 14px;
+    border-radius: 2px;
+}
+.btn:hover{
+    color: #ffffff;
+    background: #444432;
+}
+.post .post-footer{
+    border-top: 1px solid #e2e2e2;
+    margin: 10px 0 0;
+}
+.post .post-footer .fa-floder-open-o{
+    color: #999999;
+}
+.post .post-footer .tag-list{
+    color: #959595;
+    line-height: 28px;
+}
+.post .post-footer .tag-list a{
+    color: #959595;
+    padding: 0px 2px;
+}
+.post .post-footer .tag-list a:hover{
+    text-decoration: solid;
+    color: #e67e22;
+    transition: all 0.2s ease-in-out;
+}
+.asidebar .widget{
+    background: #ffffff;
+    padding: 21px 30px;
+    margin-bottom: 35px;
+}
+.asidebar .widget .title{
+    border-bottom: 1px solid #e67e22;
+    width: 100px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+.widget .title:after{
+    border-bottom: 1px solid #ebebeb;
+}
+.widget .tag-cloud{
+    line-height: 1.5em;
+}
+.widget .tag-cloud a{
+    color: #909090;
+    border: 1px solid #ebebeb;
+    display: inline-block;
+    padding: 2px 7px;
+    margin: 4px 0px 0px 4px;
+}
+.tag-cloud a:hover{
+    background: #e67e22;
+    color: #ffffff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+.main-footer{
+    background: #202020;
+    padding: 30px 21px;
+    margin-bottom: 20px;
+}
+.main-footer .widget{
+    margin:0 20px;
+}
+.main-footer .widget .title{
+    color: #ffffff;
+    border-bottom:1px solid #e67e22 ;
+    width: 90px;
+    padding-bottom: 7px;
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.widget .title:after{
+    border-bottom: 1px solid #303030;
+    content: "";
+    left: 0%;
+    bottom: -1px;
+
+}
+.main-footer .widget .recent-single-post{
+    margin: 20px 0;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #303030;
+    padding-bottom: 15px;
+}
+.main-footer .widget .recent-single-post .post-title{
+    color: #959595;
+}
+.widget .recent-single-post .post-title:hover{
+    color: #e67e22;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+.main-footer .widget .recent-single-post .date{
+    color: #505050;
+}
+.main-footer .tag-cloud a{
+    border: 1px solid #303030;
+}
+.main-footer .widget .frieng-links a{
+    border: none;
+}
+.main-footer .widget .frieng-links hr{
+    margin: 1em 0;
+    border-top: 1px dashed #303030;
+}
+.main-footer .top{
+    color: #e67e22;
+}

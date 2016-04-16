@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Collapse</title>
+</head>
+<body>
+<div  class="container">
+    <a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Link with href</a>
+    <a class="btn btn-default" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Button with data-target</a>
+    <div class="collapse" id="collapseExample">
+        <div class="well">
+            Hello
+        </div>
+    </div>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-danger">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#accordion">
+                        Collapsible Group Item #1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel">
+                <div class="panel-body">
+                    高亭
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                    <a href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#accordion">
+                        Collapsible Group Item #1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                    老公
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-danger">
+            <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                    <a href="#collapseThree" role="button" data-toggle="collapse" data-parent="#accordion">
+                        Collapsible Group Item #1
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel">
+                <div class="panel-body">
+                    媳妇
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+   /* $("#headingThree").collapse("show")*/
+    $('#headingThree').collapse({
+        toggle: false
+    })
+    $('#accordion').on('hidden.bs.collapse', function () {
+       alert("112")
+    })
+</script>
+</body>
+</html>

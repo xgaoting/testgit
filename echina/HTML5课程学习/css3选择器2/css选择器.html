@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>css选择器</title>
+    <style>
+        /*li:first-child{
+            background-color: #006600;
+        }
+        li:last-child{
+            background-color: #0066CC;
+        }
+        li:nth-child(2){
+            background-color: #0E3460;
+        }
+        li:nth-last-child(2){
+            background-color: #00FF00;
+        }*/
+        li:nth-child(odd){/*奇数颜色 odd是奇数*/
+            background-color: #0E3460;
+        }
+        li:nth-last-child(even){/*倒数偶数颜色 even是偶数*/
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>列表</h2>
+    <ul>
+        <li>菜单1</li>
+        <li>菜单2</li>
+        <li>菜单3</li>
+        <li>菜单4</li>
+        <li>菜单5</li>
+        <li>菜单6</li>
+    </ul>
+</div>
+</body>
+</html>

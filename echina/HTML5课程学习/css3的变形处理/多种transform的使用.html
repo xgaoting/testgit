@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>多种transform的使用</title>
+    <style>
+        div{
+            width: 300px;
+            background-color: #269abc;
+            text-align: center;
+        }
+        div:hover{
+            transition: 5s;
+
+            /*两种效果是不一样的*/
+            /*transform:translate(200px,200px) rotate(45deg) scale(2.5) ;*/
+            transform: rotate(45deg) translate(200px,200px)  scale(2.5) ;
+        }
+    </style>
+</head>
+<body>
+<div>示例文字</div>
+</body>
+</html>

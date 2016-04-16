@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: gaoting 5s infinite alternate;
+            -webkit-animation: gaoting 5s 1s linear infinite alternate;
+            position: relative;
+        }
+        @keyframes gaoting {
+            0%{background:red;left:0;top:0;}
+            25%{background:green;left: 200px;top:0;}
+            50%{background:#808080;left: 200px;top:200px;}
+            75%{background:#0000ff;left: 0px;top:200px;}
+            100%{background:red;left: 0px;top:0;}
+        }
+        @-webkit-keyframes gaoting {
+             0%{background:red;left:0;top:0;}
+             25%{background:green;left: 200px;top:0;}
+             50%{background:#808080;left: 200px;top:200px;}
+             75%{background:#0000ff;left: 0px;top:200px;}
+             100%{background:red;left: 0px;top:0;}
+         }
+        @-ms-keyframes gaoting {
+             0%{background:red;left:0;top:0;}
+             25%{background:green;left: 200px;top:0;}
+             50%{background:#808080;left: 200px;top:200px;}
+             75%{background:#0000ff;left: 0px;top:200px;}
+             100%{background:red;left: 0px;top:0;}
+         }
+        @-o-keyframes gaoting {
+             0%{background:red;left:0;top:0;}
+             25%{background:green;left: 200px;top:0;}
+             50%{background:#808080;left: 200px;top:200px;}
+             75%{background:#0000ff;left: 0px;top:200px;}
+             100%{background:red;left: 0px;top:0;}
+         }
+        @-moz-keyframes gaoting {
+             0%{background:red;left:0;top:0;}
+             25%{background:green;left: 200px;top:0;}
+             50%{background:#808080;left: 200px;top:200px;}
+             75%{background:#0000ff;left: 0px;top:200px;}
+             100%{background:red;left: 0px;top:0;}
+         }
+
+    </style>
+</head>
+<body>
+<div>动画效果</div>
+</body>
+</html>

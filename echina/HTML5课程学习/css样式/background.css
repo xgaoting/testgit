@@ -1,0 +1,8 @@
+body{
+    background-color: #696969;
+    background: url("../images/bg.png");
+    background-repeat: no-repeat;
+    background-position: center top;/*左右 上下*/
+    background-size: cover;
+    background-attachment: fixed;
+}

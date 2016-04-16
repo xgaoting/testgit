@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>兴亦合网络科技有限公司</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<nav class="heading" role="navigation">
+    <header class="navbar navbar-inverse ">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">
+                    <img src="images/xingyihe.png" width="99px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">生鲜配送</a></li>
+                    <li><a href="#">酒店订餐</a></li>
+                    <li><a href="#">订外卖</a></li>
+                    <li><a href="#">人力资源招聘</a></li>
+                    <li><a href="#">工程维修</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</nav>
+<!--<nav class="mynavbar" role="navigation" id="mynavbar" >
+    <div class="container">
+        <div class="col-xs-12">
+            <a href="#">生鲜配送</a>
+            <a href="#">酒店订餐</a>
+            <a href="#">订外卖</a>
+            <a href="#">人力资源招聘</a>
+            <a href="#">工程维修</a>
+            <a href="#">关于我们</a>
+        </div>
+    </div>
+</nav>-->
+<section class="content-wrap">
+    <div class="container">
+        <div class="row">
+            <main class="col-md-3 col-sm-3 col-xs-3">
+                <div class="list-group">
+                    <a href="蔬菜.html" target="divIfameId"  class="list-group-item">常购</a></li>
+                    <a href="蔬菜.html" target="divIfameId"  class="list-group-item">禽蛋肉类</a>
+                    <a href="#" class="list-group-item">蔬菜水果</a></li>
+                    <a href="#" class="list-group-item">水产火锅</a></li>
+                    <a href="#" class="list-group-item">熟主食豆质品</a></li>
+                    <a href="#" class="list-group-item">米面粮油</a></li>
+                    <a href="#" class="list-group-item">调料干货</a></li>
+                    <a href="#" class="list-group-item">餐厨用品</a></li>
+                </div>
+            </main>
+            <aside class="col-md-9 col-sm-9 col-xs-9">
+                <p>您当前的位置：</p>
+                    <ol class="breadcrumb">
+                        <li><a href="#">首页</a></li>
+                        <li class="active">常购</a></li>
+                    </ol>
+                <iframe src="welcome.html" id="divIfameId" name="divIfameId"   frameborder="0"  width="100%" height="800px">
+                </iframe>
+            </aside>
+        </div>
+    </div>
+</section>
+<footer class="footer simple">
+    <ul class="main-navigtion">
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-home icon" aria-hidden="true"></span>
+            首页
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-shopping-cart icon buy" aria-hidden="true"></span>
+            购物车
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="glyphicon glyphicon-user icon" aria-hidden="true"></span>
+                我
+            </a>
+        </li>
+    </ul>
+</footer>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(".navbar-nav a").click(function(e){
+        $(this).tab("show")
+    })
+   /* width=$(window).width();
+    if(width<768){
+        $("#mynavbar").show();
+
+    }else{
+        $("#mynavbar").hide();
+    }*/
+</script>
+</body>
+</html>

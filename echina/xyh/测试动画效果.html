@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #div{
+            width: 60px;
+            height: 40px;
+            background: #92B901;
+            color: #ffffff;
+            position: relative;
+            font-weight: bold;
+            font: bold 12px '微软雅黑', Verdana, Arial, Helvetica, sans-serif;
+            padding: 20px 10px 0px 10px;
+            animation: animated_div 5s 1;
+            -moz-animation: animated_div 5s 1;
+            -webkit-animation: animated_div 5s 1s infinite;
+            -o-animation: animated_div 5s 1;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+        }
+        @-webkit-keyframes animated_div {
+            0%{
+                background-color: #006600;
+                left: 0px;
+                top: 0px;
+            }
+            33%{
+                background-color: green;
+                transform: rotate(30deg);
+                left: 0px;
+                top: 0px;
+            }
+            66%{
+                background-color: #0088DB;
+                transform: rotate(0deg);
+                left: 500px;
+                top: 0px;
+            }
+           100%{
+               background-color: #006600;
+               transform: rotate(-360deg);
+               left: 0px;
+               top: 0px;
+           }
+         }
+    </style>
+</head>
+<body>
+<p id="div">css3动画</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+       /* body { background: url("images/330_200.jpg") right top }
+        body { background: url("images/330_200.jpg") top center }
+        body { background: url("images/330_200.jpg") center }
+        body { background: url("images/330_200.jpg") bottom no-repeat }*/
+    </style>
+</head>
+<body>
+
+<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+<script>
+    $(function(){
+    $('#div1').animate({
+        'background-position':10000
+    },20000);
+
+});
+</script>
+<div id="div1" style="height:1000px;width:1000px;background-image:url(images/330_200.jpg);background-repeat: no-repeat"></div>
+</body>
+</html>

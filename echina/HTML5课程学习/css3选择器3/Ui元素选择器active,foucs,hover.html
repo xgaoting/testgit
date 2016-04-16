@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>active,foucs,hover</title>
+    <style>
+        input[type="text"]:hover{
+            background-color: #00FF00;
+        }
+        input[type="text"]:focus{
+            background-color: #0066CC;
+        }
+        input[type="text"]:active{
+            background-color: #ffff00;
+        }
+        input[type="checkbox"]:checked{
+            outline: 1px solid brown;
+        }
+        /*diseabled,enable功能*/
+        input[type="radio"]:disabled{
+            background-color: #696969;
+        }
+        input[type="radio"]:enabled{
+            background-color: red;
+        }
+        /*通用兄弟选择器*/
+        div ~ p{
+            background-color: #3c763d;
+        }
+    </style>
+    <script>
+        function radio_change(){
+            var radio1=document.getElementById("radio1");
+            var radio2=document.getElementById("radio2");
+            var text = document.getElementById("text");
+            if(radio1.checked){
+                text.disabled="";
+            }else{
+                text.value="";
+                text.disabled="disabled";
+            }
+        }
+
+    </script>
+</head>
+<body>
+<!--active ,focus,hover-->
+<input type="text" name="name">
+<input type="text" name="age"><br/><br/>
+<!--checked-->
+<input type="checkbox"  >生活
+<input type="checkbox" >阅读
+<input type="checkbox" >上网
+<input type="checkbox" >看电影
+<br/><br/><br/><br/><br/>
+<!--通过点击可用与不可用来实现背景转换-->
+<input type="radio" id="radio1" name="radio" onchange="radio_change();">可用
+<input type="radio" id="radio2" name="radio" onchange="radio_change();">不可用
+<input type="text" id="text" disabled>
+<!--通用兄弟选择器-->
+<div>
+    <div>
+        <p>这是p标签</p>
+        <p>这是p标签</p>
+    </div>
+    <p>这是p标签</p>
+    <p>这是p标签</p>
+    <p>这是p标签</p>
+</div>
+</body>
+</html>

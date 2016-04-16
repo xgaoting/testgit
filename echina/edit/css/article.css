@@ -1,0 +1,59 @@
+body,html{
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+    background: #ebebeb;
+    line-height: 1.75em;
+    color: #505050;
+}
+a{
+    color: #e67e22;
+    outline: none;
+}
+.content .widget{
+    background: #e1e1e1;
+    margin:100px 0 50px 0;
+    position: relative;
+}
+.content .widget .article-head{
+    text-align: center;
+    line-height: 3em;
+}
+.article-head .title{
+    padding-top: 20px;
+}
+.widget .article-head .head-content{
+    color: #959595;
+}
+.content .article-content{
+    font: 400 18px/1.62 "Glyphicons Halflings";
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+.aside .widget{
+    padding: 20px 40px;
+}
+.aside .widget .title{
+    margin-top: 0px ;
+    border-bottom: 1px solid #e67e22;
+    width: 150px;
+}
+.aside .content p{
+    line-height: 1.5em;
+}
+.aside .content p a{
+    color:#0085d2 ;
+    padding: 15px auto;
+}
+.main-footer{
+    background: #959595;
+    text-align: center;
+    overflow: hidden;
+    padding: 50px 200px;
+}
+.main-footer .tag-cloud{
+    line-height: 3em;
+}
+.main-footer .tag-cloud a{
+    padding: 0px 10px;
+    color: #707070;
+    font:400 20px/1.62 "Hiragino Sans GB";
+}

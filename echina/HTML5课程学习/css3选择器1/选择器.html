@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style type="text/css">
+        [id*=div]{
+            color:#006600;//字符串包含div
+        }
+        [id^=div]{
+            color:red;//首字母包含div
+        }
+        [id$=y]{
+            color: #269abc;/*匹配结束字符*/
+        }
+        [id$=\3]{
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+<div id="mydiv1">示例文字1</div>
+<div id="div2">示例文字2</div>
+<div id="div3">示例文字3</div>
+<div id="div4">示例文字4</div>
+<div id="my">示例文字5</div>
+</body>
+</html>

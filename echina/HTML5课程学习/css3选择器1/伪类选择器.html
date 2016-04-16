@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        :root{
+            background-color: #505050
+        }
+        body{
+            background-color: #006600;
+        }
+        div *:not(h1){
+            color: #0066CC;
+        }
+        :empty{
+            background-color: #0E3460;
+        }
+        :target{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h1>这是标题1</h1>
+    <h2>这是标题2</h2>
+    <p>这是标题1的内容</p>
+</div>
+<table border="1">
+    <tr>
+        <td>这是菜单1</td>
+        <td>这是菜单内容1</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>这是菜单内容1</td>
+    </tr>
+    <tr>
+        <td>这是菜单1</td>
+        <td></td>
+    </tr>
+</table>
+<a href="#div1">1</a>
+<a href="#div2">2</a>
+<a href="#div3">3</a>
+<a href="#div4">4</a>
+<div id="div1">
+    <h2>标题命名1</h2>
+    <p>我是革命人同事</p>
+</div>
+<div id="div2">
+    <h2>标题命名2</h2>
+    <p>我是革命人同事</p>
+</div>
+<div id="div3">
+    <h2>标题命名3</h2>
+    <p>我是革命人同事</p>
+</div>
+<div id="div4">
+    <h2>标题命名4</h2>
+    <p>我是革命人同事</p>
+
+</div>
+</body>
+</html>

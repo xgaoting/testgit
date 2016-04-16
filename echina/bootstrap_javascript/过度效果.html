@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>过渡效果</title>
+    <style>
+      #mydiv{
+          width: 100px;
+        height: 100px;
+      background: red;
+      transition: width 2s;
+          -webkit-transition: width 2s;
+      }
+        #mydiv:hover{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+    </div>
+<script>
+    document.getElementById("mydiv").addEventListener("transitionend",function(E){
+        this.innerHTML = "过渡事件触发--过度已完成";
+    })
+</script>
+</body>
+</html>

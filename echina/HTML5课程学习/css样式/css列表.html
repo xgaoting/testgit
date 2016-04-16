@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>列表项</title>
+    <style>
+        ul.ul{
+            list-style-position: inside;
+        }
+        ul.ul1{
+            list-style-position: outside;
+        }
+        ul.ul2{
+            list-style-image: url("../images/list-img.png");
+        }
+    </style>
+</head>
+<!--
+    class是可以重复的，id是不能重复的
+   id是先找到结构内容再加载样式，class是先加载好样式再找结构内容；
+   id会优先使用在框架级的应用上，class具体应该在具体内容数据的构造上
+-->
+<body>
+<p>看一下效果</p>
+<ul class="ul">
+    <li>苹果</li>
+    <li>苹果</li>
+    <li>苹果</li>
+    <li>苹果</li>
+</ul>
+<p>看一下效果</p>
+<ul class="ul1">
+    <li>梨</li>
+    <li>梨</li>
+    <li>梨</li>
+    <li>梨</li>
+</ul>
+<p>看一下效果</p>
+<ul class="ul2">
+    <li>香蕉</li>
+    <li>香蕉</li>
+    <li>香蕉</li>
+    <li>香蕉</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/user.css">
+    <title>用户登录</title>
+    <style type="text/css">
+        body{
+            font-size: 25px;;
+            background-image: url("images/bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .form{
+            margin-top: 300px;;
+        }
+        .navbar-default{
+            background: #ffffff;
+        }
+        .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 17px 45px;
+        }
+        .main-footer{
+            margin-top: 300px;
+            padding-top: 20px;
+            color: #e4b9b9;
+            border-top: 1px solid #e1e1e1;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header class="main-head">
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+             <div class="navbar-header">
+                 <a class="navbar-brand" title="这是一个图标" href="#">
+                     <img src="/images/icon.png" style="width: 100px;">
+                 </a>
+             </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页</a></li>
+                    <li><a href="#">简介</a></li>
+                    <li><a href="#">关于</a></li>
+                </ul>
+                <a href="#" class="btn btn-default navbar-btn navbar-right">注册</a>
+                <form class="navbar-form navbar-right" role="search">
+                    <input type="text" class="form-control" placeholder="请输入搜索内容">
+                    <button type="button" class="btn btn-default">搜索</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="dologin">
+    <div class="container">
+        <div class="form">
+            <div class="row">
+                <div class="col-md-offset-9 col-md-3">
+                    <form action="" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">用户名</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="请输入用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">密码</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="请输入用户密码">
+                        </div>
+                        <button type="submit" class="btn btn-default form-btn">提交</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="main-footer">
+    <p>这是一个你想要的网站，如果你喜欢，请做一个推广www.zhanghuilove.com</p>
+</footer>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(".navbar-nav a").click(function(e){
+        $(this).tab("show");
+    })
+</script>
+</body>
+</html>

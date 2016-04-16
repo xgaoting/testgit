@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <title>按钮式下拉菜单</title>
+</head>
+<body>
+<div class="container">
+    <!--向上弹出下拉框
+    <div class="btn-group dropup" role="group" >
+    -->
+        <div class="btn-group" role="group" >
+       <button type="button" class="btn btn-sm btn-danger" >
+            下拉菜单
+       </button>
+        <button type="button" class="btn btn-info btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+            <span class="caret" aria-hidden="true"></span>
+        </button>
+        <ul class="dropdown-menu" role="menu">
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+        </ul>
+    </div>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

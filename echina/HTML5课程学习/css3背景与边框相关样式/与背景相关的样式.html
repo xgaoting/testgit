@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>与背景相关的样式</title>
+    <style>
+        div{
+            background-color: #000000;
+            padding: 30px;
+            font-size: 30px;
+            border: 15px dashed green;
+            color: #ffffff;
+            font-weight: bold;
+            background-image: url("../../lesson2/imges/44.gif");
+            background-repeat: no-repeat;
+            background-size: 50px 50px;
+        }
+        #div1{
+            background-clip: border-box;
+            background-origin: border-box;
+        }
+        #div2{
+            margin-top: 40px;
+            background-clip: padding-box;
+            background-origin: padding-box;
+        }
+        #div3{
+            margin-top: 40px;
+            background-clip: content-box;
+            background-origin: content-box;
+        }
+    </style>
+</head>
+<body>
+<div id="div1">这是div1</div>
+<div id="div2">这是div2</div>
+<div id="div3">这是div3</div>
+</body>
+</html>

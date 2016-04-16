@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>transition-origin</title>
+    <style>
+        div{
+            margin:100px 500px;
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            transition: 5s;
+        }
+        .div2:hover{
+            /*transform: rotate(45deg);*/
+            /*transform: scale(2.5);*/
+           /* transform: translate(200px,200px);*/
+            transform:  skew(30deg,30deg);
+            transform-origin: top right;/*top-bottom let right */
+        }
+    </style>
+</head>
+<body>
+<div class="div1">示例文字</div>
+<div class="div2">示例文字</div>
+</body>
+</html>

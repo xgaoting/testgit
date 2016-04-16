@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initical-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>按钮</title>
+</head>
+<body>
+<div class="container">
+    <button type="button" class="btn btn-primary js-loading-btn" data-loading-text="Loading..." autocomplete="off">Loading state</button>
+    <button type="button" class="btn btn-default" data-toggle="button" autocomplete="off" aria-pressed="true">Single toggle</button>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary active">
+            <input type="checkbox" autocomplete="off" checked>Checkbox 1 (pre-checked)
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off" >Checkbox 1
+        </label>
+        <label class="btn btn-primary">
+            <input type="checkbox" autocomplete="off">Checkbox 1
+        </label>
+    </div>
+    <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-default active">
+            <input type="radio" name="options" autocomplete="off" checked>单选1
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="options" autocomplete="off">单选2
+        </label>
+        <label class="btn btn-default">
+            <input type="radio" name="options" autocomplete="off">单选3
+        </label>
+    </div>
+    <button type="button" class="btn btn-default mybtn" data-complete-text="finish" autocomplete="off" >start</button>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $(".js-loading-btn").on("click",function(){
+        var btn = $(this).button("loading")
+       setTimeout(function(e){
+           btn.button("reset")
+       },3000)
+    })
+$(".mybtn").on("click",function(e){
+    $(this).button("complete")
+})
+</script>
+</body>
+</html>

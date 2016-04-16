@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>警告框</title>
+</head>
+<body>
+    <div class="container">
+        <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+        <div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
+        <div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
+        <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+        <hr>
+        <div class="alert alert-warning alert-dismissable" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" >
+                <span aria-hidden="true">&times;</span>
+            </button>
+                <strong>Waring</strong> Better check yourself ,you're not looking too good
+        </div>
+        <div class="alert alert-success">
+            Well done! You successfully read
+            <a href="#" class="alert-link"> this important alert message</a>.
+        </div>
+        <div class="alert alert-info">
+            Heads up!
+            <a href="#" class="alert-link">alert needs your attention</a>,
+            but it's not super important.
+        </div>
+        <div class="alert alert-warning">
+            Oh snap!
+            <a href="#" class="alert-link">Change a few things up</a>
+            and try submitting again.
+        </div>
+        <div class="alert alert-danger">
+            and try submitting again.
+            <a href="#" class="alert-link"> Change a few things up </a>
+            and try submitting again.
+        </div>
+    </div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+</body>
+</html>

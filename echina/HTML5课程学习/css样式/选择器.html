@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        body{
+            background-color: #808080;
+            font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", "sans-serif";
+            color:aqua;
+        }
+        .container [title=head]{
+            text-align: center;
+            text-shadow: 10px 10px 10px gold;
+        }
+        .title{
+            color: #005AA0;
+            background-color: #a94442;
+            width: 500px;;
+        }
+        main{
+            text-align: center;
+        }
+        main p{
+            padding: 12px 12px;;
+            letter-spacing: 10px;
+        }
+        [title=content]{
+            font-size: 20px;;
+        }
+    </style>
+</head>
+<body>
+<header class="container">
+    <div class="head" title="head">
+        <h1 class="title">这是一个标题</h1>
+        <p>这是文章描述性的文字</p>
+    </div>
+    <main class="content-body">
+        <p title="content"> 这是文章的内容</p>
+    </main>
+</header>
+</body>
+</html>
