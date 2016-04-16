@@ -11,8 +11,8 @@
 <script src="js/blocksit.min.js"></script>
 <script>
 $(document).ready(function() {
-	 
-	
+
+
 	//blocksit define
 	$(window).load( function() {
 		$('#container').BlocksIt({
@@ -22,7 +22,7 @@ $(document).ready(function() {
 			blockElement: '.grid'
 		});
 	});
-	
+
 	//window resize
 	var currentWidth = 1100;
 	$(window).resize(function() {
@@ -41,7 +41,7 @@ $(document).ready(function() {
 			conWidth = 1100;
 			col = 5;
 		}
-		
+
 		if(conWidth != currentWidth) {
 			currentWidth = conWidth;
 			$('#container').width(conWidth);
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
 </head>
 <body>
-<iframe src="xinwen_common.html" frameborder="0" scrolling="none" width="100%" height="560px"></iframe>
+<iframe src="../common/xinwen_common.html" frameborder="0" scrolling="none" width="100%" height="560px"></iframe>
 <!-- Content -->
 <div class="beijing">
 
@@ -67,7 +67,9 @@ $(document).ready(function() {
 <div id="container" style="margin-top: 390px;">
 	<div class="grid">
 		<div class="imgholder">
-			<img src="images/img27.jpg" />
+			<a href="index1.html" >
+				<img src="images/img27.jpg" />
+			</a>
 		</div>
 		<strong>澳门宴会厅</strong>
 		<p>介绍</p>
@@ -189,6 +191,6 @@ $(document).ready(function() {
 </section>
 
 </div>
-<iframe src="footer.html" frameborder="0" height="60px" scrolling="no" width="100%"></iframe>
+<iframe src="../common/footer.html" frameborder="0" height="60px" scrolling="no" width="100%"></iframe>
 </body>
 </html>
