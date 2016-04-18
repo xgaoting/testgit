@@ -1,0 +1,48 @@
+.cardfan{
+    width: 30%;
+    margin:4rem auto;
+    position: relative;
+}
+.cardfan img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    transform-origin:center 600px;
+    transition: all .5s;
+    border: 10px solid #fee;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    cursor: pointer;
+}
+.cardfan img:nth-child(1){
+    transform: rotate(-5deg);
+    z-index: 3;
+    filter: grayscale(1);
+}
+.cardfan img:nth-child(1):hover{
+    filter: grayscale(0);
+}
+.cardfan:hover img:nth-child(1){
+    transform: rotate(-25deg);
+    z-index: 3;
+}
+.cardfan img:nth-child(2){
+    filter:sepia(1)
+}
+.cardfan img:nth-child(2):hover{
+    filter:sepia(0);
+}
+.cardfan img:nth-child(3){
+    transform: rotate(5deg);
+    z-index: -1;
+    filter:blur(3px)
+}
+.cardfan img:nth-child(3):hover{
+    transform: rotate(5deg);
+    z-index: -1;
+    filter:blur(0px)
+}
+.cardfan:hover img:nth-child(3){
+    transform: rotate(25deg);
+    z-index: -1;
+}
+

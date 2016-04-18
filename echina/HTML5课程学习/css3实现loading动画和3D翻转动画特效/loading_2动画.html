@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loading_2</title>
+    <style>
+        .box{
+            width: 100%;
+            padding: 3%;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .box .loader{
+            width: 30%;
+            height: 200px;
+            float: left;
+            margin-right: 3%;
+            border:1px solid #ccc;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader_1{
+            width: 60px;
+            height: 60px;
+            position: relative;
+        }
+        .loader_1 i{
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #333;
+            animation: loading_1 0.6s linear 0s infinite ;
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+        }
+        .loader_1 i:nth-child(1){
+            animation:  loading_1 1s linear 0s infinite;
+        }
+        .loader_1 i:nth-child(2){
+            animation:  loading_1 1s linear 0.2s infinite;
+        }
+        .loader_1 i:nth-child(3){
+            animation:  loading_1 1s linear 0.4s infinite;
+        }
+        @keyframes loading_1 {
+           0%{
+               transform: scale(0);
+               opacity: 0;
+        }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                transform: scale(1);
+               opacity: 0;
+            }
+        }
+        .loader_2{
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+        .loader_2 i{
+            display: block;
+            border:2px solid #333;
+            border-radius: 50%;
+            position: absolute;
+            border-color: transparent #333;
+        }
+       .loader_2 i:first-child{
+           width: 35px;
+           height: 35px;
+           top: 0;
+           left: 0;
+           animation: loading_2 1s ease-in-out infinite;
+       }
+        .loader_2 i:last-child{
+           width: 15px;
+           height: 15px;
+           top: 10px;
+           left: 10px;
+            animation: loading_2 1s ease-in-out 0.5s  infinite reverse;
+       }
+        @keyframes loading_2 {
+            0%{
+                transform: rotate(0deg) scale(1) ;
+            }
+            50%{
+                transform: rotate(180deg) scale(.6) ;
+            }
+            100%{
+                transform: rotate(360deg) scale(1) ;
+            }
+        }
+        .loader_3{
+            width: 80px;
+            height: 20px;
+            position: relative;
+        }
+        .loader_3 i{
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            border-radius: 50%;
+            background-color: #333;
+            margin-right: 10px;
+        }
+        @keyframes loading_3 {
+            0%{
+                left: 100px;
+                top: 0;
+            }
+            80%{
+                left: 0;
+                top: 0;
+            }
+            85%{
+                left: 0px;
+                top: -20px;
+                width: 20px;
+                height: 20px;
+            }
+            90%{
+                width: 40px;
+                height: 20px;
+            }
+           95%{
+               left: 100px;
+               top: -20px;
+               width: 20px;
+               height: 20px;
+           }
+            100%{
+                left: 100px;
+                top: 0px;
+            }
+        }
+        .loader_3 i:nth-child(1){
+            animation: loading_3 2s linear 0s infinite;
+        }
+        .loader_3 i:nth-child(2){
+            animation: loading_3 2s linear -0.5s infinite;
+        }
+        .loader_3 i:nth-child(3){
+            animation: loading_3 2s linear -1s infinite;
+        } .loader_3 i:nth-child(4){
+            animation: loading_3 2s linear -1.5s infinite;
+        } .loader_3 i:nth-child(5){
+            animation: loading_3 2s linear -2s infinite;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="loader">
+        <div class="loader_1">
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loader_2">
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+    <div class="loader">
+        <div class="loader_3">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+</div>
+</body>
+</html>

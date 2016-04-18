@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .box{
+            width: 400px;
+            height: 300px;
+            margin:30px auto;
+            border: 1px solid #808080;
+            position: relative;
+        }
+        .box .ball{
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            margin-left: -70px;
+            border: 1px solid #dcdcdc;
+            background: -webkit-linear-gradient(top,#fff,#999);
+            box-shadow: inset 0 0 30px #999,inset 0 -15px 70px #999;
+            -webkit-animation: jump 1s ease-in-out infinite;
+            z-index: 1;
+        }
+        .box .ball:after{
+            content: " ";
+            display: block;
+            width: 70px;
+            height: 30px;
+            position: absolute;
+            left: 50%;
+            margin-left: -35px;
+            border-radius: 50%;
+            top: 10px;
+            background: -webkit-linear-gradient(#fff ,#ccc);
+
+        }
+        .shadow{
+            width: 80px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            margin-left: -40px;
+            background-color: rgba(20,20,20,.1);
+            box-shadow: 0 0 25px 20px rgba(20,20,20,.1);
+            transform:scaleY(.3);
+            animation:shrink 1s ease-in-out infinite ;
+        }
+        @-webkit-keyframes jump {
+            0%{
+                top: 0;
+                -webkit-animation-timing-function: ease-in;
+            }
+            65%{
+                top: 160px;
+                height: 140px;
+            }
+            75%{
+                top: 120px;
+                height: 120px;
+            }
+            100%{
+                top: 0;
+                height: 140px;
+            }
+         }
+        @-webkit-keyframes shrink {
+            0%{
+                width: 90px;
+                height: 60px;
+                -webkit-animation-timing-function: ease-in;
+            }
+            65%{
+                width: 10px;
+                height: 5px;
+                margin-left: -5px;
+                background: rgba(20,20,20,.3);
+            }
+            100%{
+                width: 90px;
+                height: 60px;
+                background: rgba(20,20,20,.1);
+                box-shadow: 0 0 25px 20px rgba(20,20,20,.1);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="ball"></div>
+    <div class="shadow"></div>
+</div>
+</body>
+</html>

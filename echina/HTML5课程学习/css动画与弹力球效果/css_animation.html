@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            margin:60px auto;
+            background-color: #ff0000;
+        }
+        div:hover{
+            /*属性简写*/
+            animation: anim .5s linear infinite;
+           /* animation-name:anim ;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;*/
+            animation-direction: alternate;/*规定是否应该轮流反向播放动画*/
+        }
+        @keyframes anim {
+            0%{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+            50%{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+            100%{
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+</div>
+</body>
+</html>

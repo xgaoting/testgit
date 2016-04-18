@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单</title>
+    <script src="../../全局js/jquery-2.1.1.min.js"></script>
+    <style>
+        body,p,ul{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: #0c9;
+            color: #333;
+        }
+        .content{
+            padding-top: 5%;
+        }
+        .content .select{
+            width: 300px;
+            height: 40px;
+            margin: 0 auto;
+            font-family: "microsoft yahei";
+            font-size: 16px;
+            background-color: #fff;
+            position: relative;
+        }
+        .content .select:after{
+            display: block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            position: absolute;
+            top: 11px;
+            right: 12px;
+            transform: rotate(-45deg);
+            transition:transform .3s ease-out ,top .3s ease-out;
+        }
+        .content .select p{
+            padding: 0 15px;
+            cursor: pointer;
+            line-height: 40px;
+        }
+        .content .select ul{
+            list-style-type: none;
+            background-color: #fff;
+            width: 100%;
+            overflow-y: auto;
+            position: absolute;
+            top: 40px;
+            left: 0px;
+            max-height: 0px;
+            transition: max-height .3s ease-out;
+        }
+        .content .select ul li{
+             padding: 0px 15px;
+            line-height: 40px;
+            cursor: pointer;
+        }
+        .content .select ul li:hover{
+            background-color: #e0e0e0;
+        }
+        .content .select ul li.selected{
+            color: #fff;
+            background-color: #39f;
+        }
+        @keyframes slide-down {
+            0%{transform: scale(1,0)}
+            25%{transform: scale(1,1.2)}
+            50%{transform: scale(1,0.85)}
+            75%{transform: scale(1,1.05)}
+            100%{transform: scale(1,1)}
+        }
+        .content .select.open ul{
+            max-height: 250px;
+            animation: slide-down .5s ease-in;
+            transition: max-height .2s ease-out;
+            transform-origin: 0 0;
+        }
+        .content .select.open:after{
+            transform: rotate(-225deg);
+            top:18px;
+            transition:all .3s ease-in;
+        }
+    </style>
+    <script>
+        $(function(){
+            $('.select > p').on("click", function (e) {
+                $(".select").toggleClass("open")
+                e.stopPropagation();
+            })
+            $('.select ul li').on('click',function(){
+                var _this = $(this);
+                $(".select p").text(_this.attr('data-value'));
+                _this.addClass('select').siblings().removeClass('selected');
+                $('.select').removeClass('open');
+                e.stopPropagation();
+            })
+            $(document).on("click",function(){
+                $('.select').removeClass('open');
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="select">
+            <p>所有选项</p>
+            <ul>
+                <li data-value="所有选项" class="selected">所有选项</li>
+                <li data-value="html">html</li>
+                <li data-value="css">css</li>
+                <li data-value="javascript">javascript</li>
+                <li data-value="jQuery">jQuery</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

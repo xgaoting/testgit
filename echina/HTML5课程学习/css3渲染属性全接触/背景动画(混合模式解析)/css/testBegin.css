@@ -1,0 +1,23 @@
+html,body{
+    background: url("../img/cloud.jpg"),
+                  url("../img/mountain.jpg") no-repeat center center fixed;
+    background-size: cover,cover;
+    background-blend-mode:overlay, normal;/*overlay是叠加模式*/
+    animation: myanim 10s linear infinite;
+}
+@keyframes myanim {
+    from{
+        background-position: 0% 0%,center center;
+    }
+    to{
+        background-position: -1000px 0%,center center;
+    }
+}
+h1{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 2px 8px grey;
+}
