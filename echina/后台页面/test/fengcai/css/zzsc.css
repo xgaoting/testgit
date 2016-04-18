@@ -100,6 +100,7 @@ IMG {
 	MARGIN: 0px auto; WIDTH: 958px; BORDER-TOP: #ececec 1px solid; PADDING-TOP: 20px
 }
 .detail{
+	background-color: #fff;
 	width: 60%;
 	height:auto;
 	margin: 20px auto;
@@ -107,4 +108,5 @@ IMG {
 	line-height: 20px;
 	color: green;
 	text-shadow: 5px 5px 3px darkgrey;
+
 }
