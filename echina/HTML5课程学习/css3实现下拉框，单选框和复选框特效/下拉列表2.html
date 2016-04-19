@@ -115,6 +115,7 @@
             })
             $(document).on("click", function(e){
                 $(".select").removeClass("open");
+                e.stopPropagation();
             })
 
         })
