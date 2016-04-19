@@ -35,6 +35,9 @@ body,html{
     border-right: 1px solid #cccccc;
     position: relative;
 }
+.navigiton .nav_navigiton li:last-child{
+    border: none;
+}
 .nav_navigiton li>a{
     text-decoration: none;
     color:#000000;

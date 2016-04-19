@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>食材配送</title>
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/xinwen_common.css">
+    <style>
+        .anim{
+            width: 60%;
+            margin: 70px auto;
+            position: relative;
+        }
+        .anim .row .pic{
+            position: absolute;
+            top: 0px;
+            left: 100px;
+            -webkit-animation: anim1 5s ease-out 0s infinite;
+            animation: anim1 5s ease-out 0s infinite;
+        }
+        @-webkit-keyframes anim1 {
+            0%{
+                top: 0px;
+                left: 100px;
+            }
+            25%{
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                opacity: 1;
+            }
+            50%{
+                -webkit-transform: translateX(800px);
+                transform: translateX(800px);
+                opacity: 1;
+            }
+            80%{
+                -webkit-transform: translateX(800px);
+                transform: translateX(800px);
+                opacity: 0;
+            }
+            100%{
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+        @keyframes anim1 {
+            0%{
+                top: 0px;
+                left: 100px;
+            }
+            25%{
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                opacity: 1;
+            }
+            50%{
+                -webkit-transform: translateX(800px);
+                transform: translateX(800px);
+                opacity: 1;
+            }
+            80%{
+                -webkit-transform: translateX(800px);
+                transform: translateX(800px);
+                opacity: 0;
+            }
+            100%{
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+        .anim .row .pic1{
+            position: absolute;
+            top: 300px;
+            right: 100px;
+            -webkit-animation: anim 5s ease-in 2.5s infinite;
+            animation: anim 5s ease-in 2.5s infinite;
+        }
+        @-webkit-keyframes anim {
+            0%{
+                top: 300px;
+                right: 100px;
+            }
+            50%{
+                -webkit-transform: translateX(-800px);
+                transform: translateX(-800px);
+                opacity: 1;
+            }
+            80%{
+                -webkit-transform: translateX(-800px);
+                transform: translateX(-800px);
+                opacity: 0;
+            }
+            100%{
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+        @keyframes anim {
+            0%{
+                top: 300px;
+                right: 100px;
+            }
+            50%{
+                -webkit-transform: translateX(-800px);
+                transform: translateX(-800px);
+                opacity: 1;
+            }
+            80%{
+                -webkit-transform: translateX(-800px);
+                transform: translateX(-800px);
+                opacity: 0;
+            }
+            100%{
+                -webkit-transform: translateX(0);
+                transform: translateX(0);
+                opacity: 0;
+            }
+        }
+        .simple{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+<iframe src="../common/canyindazhanggui.html" frameborder="0" scrolling="no" width="100%" height="200px"></iframe>
+<div class="anim">
+   <div class="container-fluid">
+       <div class="row simple">
+           <div class="col-md-2">
+               <img src="../image/01.png">
+           </div>
+           <div class="col-md-offset-8 col-md-2">
+               <img src="../image/03.png">
+           </div>
+           <div class="pic">
+               <img src="../image/02.png">
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-md-2">
+               <img src="../image/06.png">
+           </div>
+           <div class="col-md-offset-8 col-md-2">
+               <img src="../image/04.png">
+           </div>
+           <div class="pic1">
+               <img src="../image/05.png">
+           </div>
+       </div>
+   </div>
+</div>
+</body>
+</html>
