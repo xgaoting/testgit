@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p id="pid">hello</p>
+<button type="button" onclick="demo();">按钮</button><br/>
+    <a href="http://www.baidu.com" id="aid">hello</a><br/>
+    <button onclick="demo2()">测试2</button>
+    <br/>
+    <img src="mht.jpg" id="imgid">
+    <button onclick="demo3()">测试3</button>
+<script>
+    function demo(){
+        document.getElementById("pid").innerHTML="world";/*通过id来修改内容*/
+       /* document.getElementsByTagName("p").innerHTML = "GAOTING";*//*会寻找相同元素的第一个元素*/
+    }
+    function demo2(){
+        document.getElementById("aid").href="http://www.jikexueyuan.com";
+    }
+    function demo3(){
+        document.getElementById("imgid").src="my.jpg";
+    }
+</script>
+</body>
+</html>

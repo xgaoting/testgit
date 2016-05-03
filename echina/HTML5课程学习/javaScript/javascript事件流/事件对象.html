@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="div">
+    <button id="btn1" onclick="demo()">html事件处理</button>
+    <a id="aid" href="http://www.baidu.com">百度</a>
+</div>
+<script>
+    document.getElementById("btn1").addEventListener("click",showType);
+    document.getElementById("div").addEventListener("click",showDiv);
+    document.getElementById("aid").addEventListener("click",A);
+    function showType(event){
+        /*alert(event.type);获取当前事件的类型*/
+        alert(event.target);/*获取当前事件的目标*/
+        event.stopPropagation();/*阻止事件冒泡*/
+    }
+    function showDiv(){
+       alert("div");
+    }
+    function A(event){
+        event.preventDefault(); /* 阻止事件的默认行为，也就是跳转*/
+       /* event.stopPropagation();*/
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--<p id="pid">HELLO</p>-->
+    <button id="btn">句柄事件</button>
+<script>
+    /*句柄事件不会覆盖，可以添加多个*/
+    /*document.getElementById("btn").addEventListener("click",function(){
+        alert("hello");
+    })*/
+    var x = document.getElementById("btn");
+    x.addEventListener("click",hello);/*句柄事件*/
+    x.addEventListener("click",world);
+    /*句柄事件移除*/
+    x.removeEventListener("click",hello);
+    function hello(){
+        alert("hello");
+    }
+    function world(){
+        alert("world");
+    }
+</script>
+</body>
+</html>
