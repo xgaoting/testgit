@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--第一个实例-->
+<!--<a href="History.html" style="cursor: e-resize">回退到上一个页面</a>
+<button id="btn" onclick="goFord();">前进</button>
+<script>
+    function goFord(){
+        history.forward()
+    }
+</script>-->
+<!--第二个实例-->
+<form>
+    <input type="text" id="username">
+</form>
+<button type="button" onclick="safe()">提交</button>
+<script>
+    function safe(){
+        var name = document.getElementById("username").value;
+        if(name == "hello"){
+            history.go(-1);
+        }else{
+            alert("输入错误")
+        }
+    }
+</script>
+</body>
+</html>

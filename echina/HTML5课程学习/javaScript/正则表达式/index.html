@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*test方法用于检测当前是否包含指定字符*/
+    /*var pat = /my/;
+    var str = "this is my code";
+    console.log(pat.test(str));*/
+    /*exec方法，检索字符串中的指定值，返回值是被找到的值，如果没有发现匹配，则返回null*/
+    /*var pat = /hello/;
+    console.log(pat.exec("oh hello world")); //返还hello*/
+    /*参数 attributes 是一个可选的字符串，常用属性 "g"、"i" ，分别用于指定全局匹配、区分大小写的匹配。*/
+    /*var str = "Visit Hunger";
+    var patt1 = /hunger/i;
+    console.log(str.match(patt1));  //不区分大小写
+    var str="hello hunger valley! I am hunger";
+    var patt1=/hunger/g;//全局匹配
+    console.log(str.match(patt1));
+    var str="hello Hunger valley! I am hunger";
+    var patt1=/hunger/gi;//不区分大小写，全局匹配
+    console.log(str.match(patt1));*/
+    /*search字符串查找*/
+    /*var str="Visit W3School!";
+    console.log(str.search(/w3school/));*/ //-1 console.log(str.serach(/w3school/i)); // 6
+    /*match字符串匹配*/
+    /*var str="1 plus 2 equal 33";
+    console.log(str.match(/\d+/));   //[1]
+    console.log(str.match(/\d+/g));*/  //[1,2,33]
+    /*3. replace字符串替换*/
+    /*var str="Hello JI! oh I am hunger"
+    console.log(str.replace(/Hunger/i, "valley"));
+    console.log(str.replace(/hunger/ig, "valler"));*/
+    /*4. split字符串分割*/
+    var str = "Hello Hunger , oh I am Hunger";
+    /*str.split("");
+    str.split(/\s+/);*/
+    console.log(str.split(/\s+/));
+</script>
+</body>
+</html>

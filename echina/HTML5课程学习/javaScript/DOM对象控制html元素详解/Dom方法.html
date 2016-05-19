@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <p name="pn">hello</p>
+    <p name="pn">hello</p>
+    <p name="pn">hello</p>
+    <p name="pn">hello</p>
+    <a id="aid" title="这个是标签的属性">属性</a><br/>
+    <a id="aid2">aid2</a><br/>
+    <ul id="ul"><li>2</li><li>2</li><li>3</li></ul>
+    <div id="div">
+        <p id="pid">div的这元素</p>
+    </div>
+<script>
+    /*获取标签的名称*/
+    function getName(){
+       /* var conunt = document.getElementsByName("pn");*//*获取标签的名称*/
+        var conunt = document.getElementsByTagName("p");/*获取标签*/
+        alert(conunt.length);
+        var p = conunt[2];
+        p.innerHTML = "world";
+    }
+    /*获取标签的属性*/
+    function getAttr(){
+        var aid = document.getElementById("aid");
+        var attr = aid.getAttribute("id");
+        alert(attr);
+    }
+    /*设置标签的属性*/
+    function setAttr(){
+        var anode = document.getElementById("aid2");
+        anode.setAttribute("title","动态设置aid的属性");
+         var title = anode.getAttribute("title");
+        alert(title);
+    }
+    /*获取子节点*/
+    function getChildNode(){
+        var childnode = document.getElementsByTagName("ul")[0].childNodes;/*[0]因为一个页面中有很多ul标签，所以【0】代表是第一个位置*/
+        alert(childnode.length);
+        alert(childnode[0].nodeType);
+    }
+    /*访问父节点*/
+    function getParentNode(){
+        var div = document.getElementById("pid");
+        alert(div.parentNode.nodeName);
+    }
+    /*创建节点*/
+    function createNode(){
+        var body = document.body;
+        var input = document.createElement("input");
+        input.type="button";
+        input.value="这是一个按钮";
+        body.appendChild(input);/*append是往末尾来插入节点*/
+    }
+    /*添加子节点*/
+    function addNode(){
+        var div = document.getElementById("div");
+        var node = document.getElementById("pid");
+        var newnode = document.createElement("p");
+        newnode.innerHTML = "动态插入p元素";
+        div.insertBefore(newnode,node);
+    }
+    /*删除子节点*/
+    function deleNode(){
+        var div  = document.getElementById("div");
+        var p = div.removeChild(div.childNodes[1]);
+    }
+   /*网页尺寸*/
+    /*offsetHeight是不包含滚动条*/
+    /*scrollHeight包含滚动条*/
+    function getSize(){
+        var width = document.documentElement.offsetWidth||document.body.offsetWidth;/*浏览器的兼容器*/
+        var height = document.documentElement.offsetHeight||document.body.offsetHeight;/*浏览器的兼容器*/
+        alert(width+","+height);
+    }
+    getSize();
+</script>
+</body>
+</html>

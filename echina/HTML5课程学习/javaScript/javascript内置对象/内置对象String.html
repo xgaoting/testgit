@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var str = "hello World";
+        var str1 = "hello,jike,xueyuan";
+        document.write("字符串的长度为："+str.length+"<br/>");/*字符串的长度*/
+        document.write(str.indexOf("world")+"<br/>");/*查找是否包含字符串，有则返回字符的位置，没有则返回-1*/
+        document.write(str.match("world1")+"<br/>");/*如果有则返回匹配的字符串，如果没有则*/
+        document.write(str.replace("world","jikexueyuan")+"<br/>");/*将指定字符串换成想要的字符*/
+        document.write(str.toUpperCase()+"<br/>");/*将字母全部转换成大写*/
+        document.write(str.toLowerCase()+"<br/>");/*将字母全部转换成大写*/
+        var s = str1.split(",");/*以什么来分隔符*/
+        document.write(s[1]+"<br/>");
+        document.write(str.charAt(4)+"<br/>");/*显示字母中第几个字母的单词*/
+        document.write(str.charCodeAt(1)+"<br/>");
+        document.write(str.concat(str1)+"<br/>")/*将两个字符串连接起来*/
+    </script>
+</body>
+</html>
