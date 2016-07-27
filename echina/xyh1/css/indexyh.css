@@ -41,9 +41,9 @@ article{
     width:100%;
     height:0px;
     background:url("../images/1450086668851.jpg");
-    animation:myfirst 5s;
+    animation:myfirst 1s;
     -moz-animation:myfirst 5s; /* Firefox */
-    -webkit-animation:myfirst 5s; /* Safari and Chrome */
+    -webkit-animation:myfirst 1s; /* Safari and Chrome */
     -o-animation:myfirst 5s; /* Opera */
     -ms-animation:myfirst 5s;
 }

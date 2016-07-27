@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>构造函数</title>
+</head>
+<body>
+<script>
+    //1.用于创建特定类型的对象
+    //2.这样的函数名会被笑话的
+    //3.js开发的时候写单引号
+    //4.js里构造函数比较特殊的地方new
+    //5.其它语言里,比如php里人家实现有个关键字 A class
+    //6.zaomen就是构造函数，他又充当了类的概念
+    /*构造和单例模式混用*/
+
+        function zaomen(huawen)
+    {
+        /*这样使代码更加的健状*/
+        if (!(this instanceof zaomen)) {
+            return new zaomen();
+        }
+        ;
+        var _huawen = "普通";
+        if (huawen) {
+            _huawen = huawen;
+        }
+        this.suo = "普通";
+        this.huawen = _huawen;
+        this.create = function () {
+            return '锁头' + this.suo + '【花纹】' + this.huawen;
+        }
+    }
+
+
+        function zaomen(huawen)
+    {
+        /*这样使代码更加的健状*/
+        if (!(this instanceof zaomen)) {
+            return new zaomen();
+        }
+        ;
+        var _huawen = "普通";
+        if (huawen) {
+            _huawen = huawen;
+        }
+        this.suo = "普通";
+        this.huawen = _huawen;
+        this.create = function () {
+            return '锁头' + this.suo + '【花纹】' + this.huawen;
+        }
+    }
+
+
+    var xiaozhang = new AA.zaomen();
+    alert("xiaowang"+xiaozhang.create());
+
+    var xiaoli = new BB.zaomen('绚丽');
+    alert("xialli"+xiaoli.create());
+</script>
+</body>
+</html>

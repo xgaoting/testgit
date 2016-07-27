@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--对象构建十分复杂-->
+    <script>
+        //对象构建十分复杂
+        //需要依赖具体的环境不同的实例
+        //处理大量具有相同属性的小对象
+        /*
+        * 不能滥用工厂，有时候仅仅是给代码增加复杂度
+        * */
+        var gongchang = {};
+        gongchang.chanyifu = function(argumetn){
+            this.gongren = 50;
+            alert('我们有'+this.gongren);
+        }
+        gongchang.chanxie = function(){
+            alert('产鞋子');
+        }
+        gongchang.yunshu = function(){
+            alert('运输');
+        }
+        gongchang.changzhang = function(para){
+          return  new gongchang[para]();
+        }
+        var me = gongchang.changzhang('chanyifu');
+        alert(me.gongren);
+     </script>
+</body>
+</html>

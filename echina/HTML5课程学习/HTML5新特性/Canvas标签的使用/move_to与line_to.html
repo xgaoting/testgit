@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body onload="draw('canvas')">
+<canvas id="canvas" width="300" height="400"></canvas>
+<script>
+    function draw(id){
+        var canvas = document.getElementById(id);
+        if(canvas==null){
+            return false;
+        }
+        var context = canvas.getContext("2d");
+        context.fillStyle = "#eeeeef";//图形背景的样式
+        context.fillRect(0,0,300,400);//绘制矩形
+        var dx = 150;
+        var dy = 150;
+        var s = 100;
+        context.beginPath();
+        context.fillStyle = "rgb(100,255,100)";//图形背景样式
+        context.strokeStyle = "rgb(0,0,100)";//图形边框样式
+        var x = Math.sin(0);
+        var y = Math.cos(0);
+        var dig = Math.PI / 15*11;
+        for(var i =0;i<30;i++){
+            var x = Math.sin(i*dig);
+            var y = Math.cos(i*dig);
+            context.lineTo(dx+x*s,dy+y*s);//lineTo绘制直线
+        }
+        context.closePath();
+        context.fill();
+        context.stroke();
+    }
+</script>
+</body>
+</html>

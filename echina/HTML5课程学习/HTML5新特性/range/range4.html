@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*setStartBefore用于将某个节点的起点设为range对象所代表区域的起点位置
+     setStartAfter 用于将某个节点的终点设为range对象所代表区域的起点位置
+     setEndBefore 用于将某个节点的起点设为range对象所代表区域的终点位置
+     setEndAfter 用于将某个节点的终点设为range对象所代表区域的终点位置
+     */
+    function deleteRow(){
+        var table = document.getElementById('myTable');
+        if(table.rows.length>0){
+            var row =  table.rows[0];
+            var range = document.createRange();
+            range.setStartBefore(row);
+            range.setEndAfter(row);
+            range.deleteContents();
+        }
+    }
+</script>
+    <table id="myTable" border="1" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>内容1</td>
+            <td>内容2</td>
+        </tr>
+        <tr>
+            <td>内容3</td>
+            <td>内容4</td>
+        </tr>
+    </table>
+<button onclick="deleteRow()">删除第一行</button>
+</body>
+</html>

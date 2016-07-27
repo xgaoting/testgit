@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--figure元素和figcaption元素  figure代表统计图，图片，代码事例还可以代表音频插件，视频插件，统计表格等-->
+    <!--figcaption元素，在figure里，且能在figure里，且只代表一个-->
+    <figure>
+        <img src="330_200.jpg" alt="美女">
+        <img src="330_200.jpg" alt="美女">
+        <img src="330_200.jpg" alt="美女">
+        <figcaption>美女</figcaption>
+    </figure>
+<!--details元素和summary元素-->
+<script>
+    function detail_onclick(detail){
+        var p = document.getElementById('p');
+        alert(detail.open);
+        if(detail.open){
+            p.style.visibility = 'hidden';
+        }else{
+            p.style.visibility = 'visible';
+        }
+    }
+</script>
+<details id="detail" onclick="detail_onclick(this)">
+    <summary>速度与激情7</summary>
+    <p id="p" style="visibility: hidden">你好么， 这是为保罗特意打造的电影，看起来激情四射</p>
+</details>
+<!--mark元素，高亮元素-->
+    <p>这是一个<mark>漂亮</mark>的元素</p>
+
+</body>
+</html>

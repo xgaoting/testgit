@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function deleteChar(){
+        var div = document.getElementById('div');
+        var content = div.firstChild;
+        var range = document.createRange();
+        range.setStart(content,1);
+        range.setEnd(content,4);
+        range.deleteContents();
+    }
+</script>
+<!--setStart setEnd-->
+<div id="div" style="color: #ff0000">
+    这段文字是用来 删除的
+</div>
+<button onclick="deleteChar()">删除文字</button>
+</body>
+</html>

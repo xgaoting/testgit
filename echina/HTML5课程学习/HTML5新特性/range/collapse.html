@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    /*detach 用于释放range对象，否则将抛出脚本错误*/
+    var rangeObj = document.createRange();
+    function selectRangeContent(){
+        var div = document.getElementById('div');
+        rangeObj.selectNode(div);
+        rangeObj.detach()
+    }
+    /*range的collapse用于range对象所代表的区域的终点移动该区域的起点处，或将range对象所代表的起点移动到终点处*/
+    function upselect(){
+        rangeObj.collapse(true);
+    }
+    function showRange(){
+        alert(rangeObj.toString());
+    }
+</script>
+<div id="div" style="background-color: bisque;width: 300px;height: 50px">元素中的内容</div>
+<button onclick="selectRangeContent();">选择元素</button>
+<button onclick="upselect();">取消元素</button>
+<button onclick="showRange();">显示range内容</button>
+</body>
+</html>

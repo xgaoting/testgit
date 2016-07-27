@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--表单内的元素可以写在form表单之外-->
+    <form id="testform">
+        <input type="text">
+    </form>
+    <textarea form="testform"></textarea>
+<!--formaction的应用-->
+<form id="testform1">
+    <input type="submit" name="s1" value="v1" formaction="http://localhost:8080/test01.jsp">跳转到01的jsp
+    <input type="submit" name="s2" value="v2" formaction="http://localhost:8080/test02.jsp">跳转到02的jsp
+    <input type="submit" name="s3" value="v3" formaction="http://localhost:8080/test03.jsp">跳转到03的jsp
+</form>
+<!--不同的方法提交-->
+<form id="testform2">
+    <input type="submit" name="s1" value="v1" formmethod="post" formaction="http://localhost:8080/HELLO/test01.jsp">
+    <input type="submit" name="s2" value="v2" formmethod="get" formaction="http://localhost:8080/HELLO/test02.jsp">
+</form>
+<!--formenctype-->
+<form id="testform3">
+    <input type="submit" name="s1" value="v1" formenctype="text/plain">
+    <!--发送至服务器前不进行字符的字符串转换-->
+    <input type="submit" name="s1" value="v1" formenctype="multipart/form-data">
+    <!--发送至服务器前进行字符的字符串转换-->
+    <input type="submit" name="s1" value="v1" formenctype="application/x-www-form-urlencoded">
+</form>
+<form id="testform4">
+    <!--_blank在新的页面中进行打开-->
+    <input type="submit" name="s1" value="v1" formtarget="_blank" formaction="http://localhost:8080/test01.jsp">跳转到01的jsp
+    <!--_self的当前页面中进行打开-->
+    <input type="submit" name="s2" value="v2" formtarget="_self" formaction="http://localhost:8080/test02.jsp">跳转到02的jsp
+    <!--的当前框架的父框架中进行打开-->
+    <input type="submit" name="s3" value="v3" formtarget="_parent" formaction="http://localhost:8080/test03.jsp">跳转到03的jsp
+    <!--的当前页面中进行打开-->
+    <input type="submit" name="s3" value="v3" formtarget="_top" formaction="http://localhost:8080/test03.jsp">跳转到03的jsp
+    <!--在指定框架中打开-->
+    <input type="submit" name="s3" value="v3" formtarget="framename" formaction="http://localhost:8080/test03.jsp">跳转到03的jsp
+</form>
+<!--autofocus页面首次打开的获取焦点的选项-->
+<form id="testform5">
+    <input type="text">
+    <input type="text" autofocus>
+</form>
+<!--required非常有用-->
+<form action="#">
+    <input type="text"  required>
+    <button type="submit">提交</button>
+</form>
+<!--lables属性-->
+<script>
+    function Validate(){
+        var txtName = document.getElementById('text_name');
+        var button = document.getElementById('btnValidate');
+        var form = document.getElementById('testform6');
+        if(txtName.value.trim()==""){
+            var label = document.createElement('label');
+            label.setAttribute("for","txt_name");
+            form.insertBefore(label,button);
+            txtName.labels[1].innerHTML = "请输入姓名";
+            txtName.labels[1].setAttribute('style','font-size:9px;color:red');
+        }
+    }
+</script>
+<form id="testform6">
+    <label id="label" for="text_name">姓名：</label>
+    <input id="text_name">
+    <input type="button" id="btnValidate" value="验证" onclick="Validate();">
+</form>
+</body>
+</html>

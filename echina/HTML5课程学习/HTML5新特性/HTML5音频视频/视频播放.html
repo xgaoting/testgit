@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--<video  controls="controls">-->
+<button onclick="clickV()">播放/暂停</button><br>
+<button onclick="clickBig()">放大</button><br>
+<button onclick="clickSmall()">缩小</button><br>
+<video  id="video" width="800px" height="800px">
+    <source src="小沈阳小品集锦.mp4">
+    <source src="小沈阳小品集锦.ogg"><!--ogg格式为火狐浏览器的执行格式-->
+    您的浏览器不支持</video>
+<script>
+    var v = document.getElementById('video');
+    function clickV(){
+        if(v.paused){
+            v.play();
+        }else{
+            v.pause();
+        }
+    }
+    function clickBig(){
+        v.width = 800;
+        v.height = 800;
+    }
+    function clickSmall(){
+        v.width = 300;
+        v.height = 300;
+    }
+</script>
+</body>
+</html>

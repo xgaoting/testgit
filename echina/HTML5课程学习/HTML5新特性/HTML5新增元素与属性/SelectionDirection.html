@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function AD(){
+        var control = document.forms[0]['text'];
+        var Direction = control.selectionDirection;
+        alert(Direction);
+    }
+</script>
+<!--获取用户的操作，来获取信息，当鼠标选中从左向右时，弹出forward,从右向左时弹出backword-->
+    <form>
+        <input type="test" name="text">
+        <input type="button" value="点击我" onclick="AD();">
+    </form>
+</body>
+</html>

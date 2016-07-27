@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function deleteRangeContent(onlyContent){
+            var div = document.getElementById('div');
+            var range = document.createRange();
+            if(onlyContent){
+                range.selectNodeContents(div);
+                range.deleteContents();
+            }else{
+                range.selectNode(div);
+                range.deleteContents();
+            }
+        }
+    </script>
+<div id="div" style="background-color: #e0a0b0;width: 300px;height: 50px;">
+    元素中的内容
+</div>
+<button onclick="deleteRangeContent(true)">删除内容</button>
+<button onclick="deleteRangeContent(false)">删除元素</button>
+</body>
+</html>

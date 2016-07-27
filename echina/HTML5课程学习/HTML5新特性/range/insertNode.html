@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    function moveButton(){
+        var btn = document.getElementById('button');
+        var selcetion = document.getSelection();
+        if(selcetion.rangeCount>0){
+            var range = selcetion.getRangeAt(0);
+            range.insertNode(btn);
+        }
+    }
+</script>
+<!--onmouseup是鼠标按下的事件-->
+    <div onmouseup="moveButton()" style="width: 400px;background-color: bisque">
+        这里是我随便写的一些文字这里是我随便写的一些文字这里是我随便写的一些文字这里是我随便写的一些文字这里是我随便写的一些文字
+    </div>
+    <button id="button">按钮</button>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function laoban(xiangmujingli){
+            if(xiangmujingli){
+                this.xiangmujingli = xiangmujingli;
+            };
+        }
+        laoban.prototype.write = function (php) {
+            this.xiangmujingli.write(php)
+        }
+        function xiangmujingli(code){
+            if(code){
+                this.coder = code;
+            }
+        }
+        xiangmujingli.prototype.write = function(php){
+            this.coder.write(php);
+        }
+        function coder(){
+
+        }
+        coder.prototype.write = function(php){
+            console.log('coding....'+php);
+        }
+        //begin发起，coder来结束
+        var begin = new laoban(new xiangmujingli(new coder()));
+        begin.write('php');
+    </script>
+</body>
+</html>

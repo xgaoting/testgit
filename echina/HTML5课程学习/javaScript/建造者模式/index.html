@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--建造者模式-->
+
+    <script>
+    //1.产生的东西是房子
+        //2.baogongtou调用工人进行开工，而且他要清楚工人们具体的某一个大项
+        //3.工人是盖房子的 工人可以建卧室，建客厅，建厨房
+        function Fangzi(){
+            this.woshi = "";
+            this.keting = "";
+            this.chufang = "";
+        }
+        function Baogongtou(){
+            this.gaifangzi = function(gongren){
+                    gongren.jian_woshi();
+                    gongren.jian_chufang();
+                    gongren.jian_keting();
+            }
+        }
+        function Gongren(){
+            this.jian_woshi = function(){
+                /*console.log('卧室我盖好了');*/
+                alert('卧室我盖好了');
+            }
+            this.jian_keting = function(){
+                //console.log('客厅我盖好了');
+                alert('客厅我盖好了');
+            }
+            this.jian_chufang = function(){
+                //console.log('厨房我盖好了');
+                alert('厨房我盖好了');
+            }
+            this.jiaogong = function(){
+                var _fangzi = new Fangzi();
+                _fangzi.woshi = "ok";
+                _fangzi.keting = "OK";
+                _fangzi.chufang = "oK";
+                return _fangzi;
+            }
+        };
+        var gongren = new Gongren();
+        //var baogongtou = new Baogongtou(gongren);
+        var baogongtou = new Baogongtou();
+        baogongtou.gaifangzi(gongren);
+        var myfangzi = gongren.jiaogong();
+        console.log(myfangzi);
+    </script>
+</body>
+</html>

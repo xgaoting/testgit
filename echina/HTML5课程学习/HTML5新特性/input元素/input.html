@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!--input元素-->
+    <form>
+        <input type="url" name="url" value="http://www.jikexueyuan.com" >
+        <input type="submit" value="提交">
+    </form><br>
+    <!--email类型-->
+<form>
+    <input type="email" name="email" value="xgaoting@126.com">
+    <input type="submit" value="提交">
+</form>
+<br>
+    <!--data类型-->
+<input type="date" name="date" value="">
+<br>
+<!--time类型-->
+<input type="time" name="time" value="10:00">
+<Br>
+<!--datatime类型-->
+    <form>
+        <input type="datetime" name="datetime" value="">
+        <input type="submit" value="提交">
+    </form>
+    <Br>
+<!--datetime-local类型-->
+<input name="datetimelocal" type="datetime-local"><br>
+<!--month类型-->
+<input type="month" name="month" value="2018-1-01-01"><Br>
+<!--week元素-->
+    <input type="week" name="week"><Br>
+<!--number类型-->
+<input type="number" name="number" value="15" min="10" max="100" step="5" ><br>
+    <script>
+        function sum(){
+            var n1 = document.getElementById('num1').valueAsNumber;
+            var n2 = document.getElementById('num2').valueAsNumber;
+            document.getElementById('result').valueAsNumber = n1+n2;
+        }
+    </script>
+<form>
+    <!--计算器-->
+    <input type="number" id="num1">
+    +
+    <input type="number" id="num2">
+    =
+    <input type="number" id="result" readonly>
+    <input type="button" value="计算" onclick="sum()">
+</form>
+</body>
+</html>

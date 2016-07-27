@@ -13,49 +13,49 @@ $(document).ready(function() {
     });
     $(".two").click(function() {
         $('body,html').animate({
-                scrollTop: 1050
+                scrollTop: 1015
             },
             1000);
         return false;
     });
     $(".three").click(function() {
         $('body,html').animate({
-                scrollTop: 1650
+                scrollTop: 2025
             },
             1000);
         return false;
     });
     $(".four").click(function() {
         $('body,html').animate({
-                scrollTop: 2320
+                scrollTop: 2625
             },
             1000);
         return false;
     });
     $(".five").click(function() {
         $('body,html').animate({
-                scrollTop: 3430
+                scrollTop: 3060
             },
             1000);
         return false;
     });
-    $(".six").click(function() {
+/*    $(".six").click(function() {
         $('body,html').animate({
                 scrollTop: 4025
             },
             1000);
         return false;
-    });
+    });*/
     $(".seven").click(function() {
         $('body,html').animate({
-                scrollTop: 4770
+                scrollTop: 3622
             },
             1000);
         return false;
     });
     $(".eightt").click(function() {
         $('body,html').animate({
-                scrollTop: 5230
+                scrollTop: 4090
             },
             1000);
         return false;
