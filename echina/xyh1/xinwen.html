@@ -82,6 +82,16 @@
 <script src="js/start.js"></script>
 <script>
     startInit('frame', 360);
+    /*iframe自适应页面内容的js*/
+			function iFrameHeight(){
+				var ifm = document.getElementById('frame');
+				var subWeb = document.frames?document.frames["iframepage"].document:ifm.contentDocument;
+				ifm.contentDocument;
+				if(ifm!=null&&subWeb!=null){
+					ifm.height = subWeb.body.scrollHeight;
+					ifm.height = subWeb.body.scrollWidth;
+				}
+			}
 </script>
 </body>
 </html>
