@@ -133,6 +133,14 @@
 <script src="../../../../test/jquery-2.1.1.min.js"></script>
 <script src="../../../../test/bootstrap.min.js"></script>
 <script>
+    /*iframe自适应页面内容的js*/
+	function iFrameHeight(){
+		var iframe = document.getElementById('frame');
+		var height = document.frames?document.frames["frame"].document:iframe.contentDocument;
+		if(iframe != null && height != null){
+			iframe.height = Math.max(height.body.scrollHeight,600);
+		}
+	}	
     $(".navbar-nav a").click(function(e){
         $(this).tab("show");
     })
