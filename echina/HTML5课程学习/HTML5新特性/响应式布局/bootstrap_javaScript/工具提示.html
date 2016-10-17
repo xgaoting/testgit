@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+<p class="muted" style="margin-bottom: 0px;">
+    欢迎来到<a href="#" id="mytooltip" data-toggle="tooltip" title="title" data-placement="bottom" data-original-title="www.jikexueyuan.com">极客学院</a>这里有最全的实战视频<br/>
+    欢迎来到<a href="#" id="mytooltip1" data-toggle="tooltip" title="title" data-placement="left" data-original-title="www.jikexueyuan.com">极客学院</a>这里有最全的实战视频<br/>
+    欢迎来到<a href="#" id="mytooltip2" data-toggle="tooltip" title="title" data-placement="right" data-original-title="www.jikexueyuan.com">极客学院</a>这里有最全的实战视频<br/>
+    欢迎来到<a href="#" id="mytooltip3" data-toggle="tooltip" title="title" data-placement="top" data-delay="2s" data-original-title="www.jikexueyuan.com">极客学院</a>这里有最全的实战视频<br/>
+</p>
+<!-- HTML to write -->
+<a href="#" data-toggle="tooltip" title="Some tooltip text!">Hover over me</a>
+
+<!-- Generated markup by the plugin -->
+<div class="tooltip top" role="tooltip">
+    <div class="tooltip-arrow"></div>
+    <div class="tooltip-inner">
+        Some tooltip text!
+    </div>
+</div>
+<script src="jquery-2.1.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $('[data-toggle="tooltip"]').tooltip();
+    /*$("#mytooltip").tooltip("show");*/
+    $('#mytooltip').on('hidden.bs.tooltip', function () {
+        alert(112);
+    })
+</script>
+</body>
+</html>

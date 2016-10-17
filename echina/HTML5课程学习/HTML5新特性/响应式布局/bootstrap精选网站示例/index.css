@@ -37,7 +37,7 @@ h1,h3,p,button{
     background-size: cover;
 }
 #onepagebg{
-    background-image: url("imges/onepage-bg.png");
+    background-image: url("../../../../exetrice/imges/onepage-bg.png");
 }
 .head1content{
     margin-top: 150px;
@@ -141,7 +141,7 @@ h1,h3,p,button{
     background-size: cover;
 }
 #threepagebg{
-    background-image: url("imges/three.jpg");
+    background-image: url("../../../../exetrice/imges/three.jpg");
 }
 .threecontent{
     width: 100%;
@@ -166,7 +166,7 @@ h1,h3,p,button{
 }
 .fourpage{
     height: 700px;
-    background-image: url("imges/four.jpg");
+    background-image: url("../../../../exetrice/imges/four.jpg");
     margin-top: 800px;
 }
 .coursexingqing-text{
@@ -212,7 +212,7 @@ h1,h3,p,button{
     background-size: cover;
 }
 #fivepage{
-    background-image: url("imges/fivebg.jpg");
+    background-image: url("../../../../exetrice/imges/fivebg.jpg");
 }
 .footertext{
     text-align: center;

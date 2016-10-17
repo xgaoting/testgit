@@ -7,7 +7,7 @@
     <title>导航</title>
 </head>
 <body>
-<ul class="nav nav-tabs">
+<ul class="nav nav-tabs" id="mytab">
     <li role="presentation" class="active"><a href="#">Home</a></li>
     <li role="presentation"><a href="#">Proofile</a></li>
     <li role="presentation"><a href="#">Messages</a></li>
@@ -44,7 +44,7 @@
         Messages
         <span class="caret"></span>
     </a>
-        <ul class="dropdown-menu " role="menu">
+        <ul class="dropdown-menu dropdown-menu-right" role="menu">
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">one</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">tow</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">three</a></li>
@@ -63,6 +63,9 @@
 <script src="../../../../test/jquery-2.1.1.min.js"></script>
 <script src="../../../../test/bootstrap.min.js"></script>
 <script type="text/javascript">
+    $("#mytab a").click(function(e){
+        $(this).tab("show");
+    })
     $("#navs a").click(function(e){
         $(this).tab("show");
     })
