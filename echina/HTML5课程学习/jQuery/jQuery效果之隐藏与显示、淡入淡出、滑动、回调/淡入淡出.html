@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#in").click(function(){
+                $("#div1").fadeIn(1000)
+                $("#div2").fadeIn(1000)
+                $("#div3").fadeIn(1000)
+            })
+            $("#out").click(function(){
+                $("#div1").fadeOut(1000)
+                $("#div2").fadeOut(1000)
+                $("#div3").fadeOut(1000)
+            })
+            $("#fadeToggle").click(function(){
+                $("#div1").fadeToggle(1000)
+                $("#div2").fadeToggle(1000)
+                $("#div3").fadeToggle(1000)
+            })
+            /*设置透明度*/
+            $("#to").click(function(){
+                $("#div1").fadeTo(1000,0)
+                $("#div2").fadeTo(1000,0.5)
+                $("#div3").fadeTo(1000,1)
+            })
+        });
+    </script>
+</head>
+<body>
+    <button id="in">fadeIn</button>
+    <button id="out">fadeOut</button>
+    <button id="fadeToggle">fadeToggle</button>
+    <button id="to">fadeTo</button>
+    <div id="div1" style="width: 80px;display: none; height: 80px;background-color: aqua"></div>
+    <div id="div2" style="width: 80px;display: none; height: 80px;background-color: #e0a0b0"></div>
+    <div id="div3" style="width: 80px;display: none; height: 80px;background-color: #00FF00"></div>
+</body>
+</html>

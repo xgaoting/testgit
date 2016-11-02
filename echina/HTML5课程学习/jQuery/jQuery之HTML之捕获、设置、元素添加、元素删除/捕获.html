@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            /*获取元素内的文本内容标签内的文本内容*/
+           /* $("#btn1").click(function () {
+                alert("text:"+$("#text").text());
+            });*/
+            /*获取元素内的内容  可以或许标签*/
+          /*  $("#btn1").click(function () {
+                alert("text:"+$("#text").html());
+            });*/
+            /*$("#btn1").click(function () {
+                alert("text:"+$("#it").val());
+            });*/
+            /*获取a标签的属性*/
+            $("#btn1").click(function () {
+                alert("text:"+$("#aid").attr("id"));
+            });
+        })
+    </script>
+</head>
+<body>
+    <p id="text">this is web page<a href="#">这是一个a标签</a></p>
+    <button id="btn1">点击</button>
+    <p><input type="text" id="it" value="jikexueyuan"></p>
+    <p><a href="http://www.jikexueyuan.com" id="aid">极客学院</a></p>
+</body>
+</html>

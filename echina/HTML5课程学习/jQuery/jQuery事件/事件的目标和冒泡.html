@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("body").on("click",bodyHandle);
+            $("div").on("click",divHandle1);
+            $("div").on("click",divHandle2);
+        })
+        function bodyHandle(event){
+            colnsole(event);
+        }
+        function divHandle1(event){
+            colnsole(event);
+            /*阻止当前父级的冒泡*/
+            /*event.stopPropagation();*/
+            /*阻止所有事件的冒泡*/
+            event.stopImmediatePropagation();
+        }
+        function divHandle2(event){
+            colnsole(event);
+        }
+        function colnsole(event){
+            colnsole.log(event);
+        }
+    </script>
+</head>
+<body>
+    <div style="width: 300px;height: 500px;background-color: aqua">
+        <ul>
+            <li>A</li>
+            <li>B</li>
+            <li>C</li>
+            <li>D</li>
+        </ul>
+    </div>
+</body>
+</html>
