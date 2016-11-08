@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        /*
+        * append 在元素后边添加内容
+        * prepend
+        * before
+        * after
+        * */
+        $(document).ready(function(){
+            $("#btn1").on("click", function () {
+                /*append 是在元素后边添加内容*/
+               /* $("#p1").append(" this  is web page");*/
+                /*prepend在元素之前添加内容*/
+                $("#p1").prepend(" this  is web page,");
+            })
+            $("#btn2").on("click", function () {
+                /*before和after都会换行来添加*/
+               /* $("#p2").before("有什么不同");*/
+                $("#p2").after("有什么不同");
+            })
+        })
+        function appendText(){
+            var text1 = "<p>iwen</p>";
+            var text2 = $("<p></p>").text("ime");
+            var text3 = document.createElement("p");
+            text3.innerHTML = "acely";
+            $("body").append(text1,text2,text3)
+        }
+     </script>
+</head>
+<body>
+<p id="p1">hello world</p>
+<button id="btn1">添加内容</button><br/>
+<p id="p2">hello world2</p>
+<button id="btn2">添加内容</button>
+<button onclick="appendText();">添加</button>
+</body>
+</html>

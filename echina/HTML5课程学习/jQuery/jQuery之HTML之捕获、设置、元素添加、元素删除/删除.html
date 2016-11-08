@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        /*remove  empty*/
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                /*$("p").remove();*/
+                $("p").empty();
+            })
+            $("#btn1").click(function(){
+                /*remove是删除所有内容*/
+                $("div").remove();
+                /*empty是清除选定元素内的子元素内容*/
+               /* $("#div").empty();*/
+            })
+        })
+    </script>
+</head>
+<body>
+<p>hello word</p>
+<button id="btn">删除</button><br/><br/>
+<div id="div" style="height: 200px;width: 200px;border: 1px solid #000000;background-color: aqua">
+    hello word
+    <p>hello wore</p>
+    <div>这是div元素</div>
+</div>
+<p><button id="btn1">删除2</button></p>
+</body>
+</html>
