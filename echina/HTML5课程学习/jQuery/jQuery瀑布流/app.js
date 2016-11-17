@@ -23,7 +23,7 @@ function imgLocation(){
              var minboxIndex = $.inArray(minboxHeight,boxArr);//获取最小高度的位置
             /*console.log(minboxIndex);*/
             /*console.log(value);*/
-            $(value).css({
+            $(value).css({//设置最小图片的样式
                 "position":"absolute",
                 "top":minboxHeight,
                 "left":box.eq(minboxIndex).position().left
