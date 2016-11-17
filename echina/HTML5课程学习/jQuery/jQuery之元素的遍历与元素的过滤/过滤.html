@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        /*
+        * first()
+        * last()
+        * eq()
+        * filter()
+        * not()
+        * */
+        $(document).ready(function(){
+           /* $("div p").first().css({"background":"red","font-size":"30px"});*//*修改第一个元素*/
+            /*$("div p").last().css({"background":"red","font-size":"30px"});*//*修改最后一个元素元素*/
+           /* $("div p").eq(1).css({"background":"red","font-size":"30px"});*//*修改索引为指定数值的元素样式*/
+            $("div p").filter(".pclass").css({"background":"red","font-size":"30px"});/*修改p元素的样式  a元素的样式被忽略*/
+           /* $("div p").not(".pclass").css({"background":"red","font-size":"30px"});*//*修改指定元素的剩余元素样式*/
+        })
+    </script>
+</head>
+<body>
+    <div>
+        <p>div1</p>
+    </div>
+    <div>
+        <p class="pclass">div2</p>
+    </div>
+    <div>
+        <p class="pclass">div3</p>
+    </div>
+    <div>
+        <p>div4</p>
+    </div>
+</body>
+</html>

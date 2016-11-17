@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .bd *{
+            border: 3px solid darkgray;
+            color: #808080;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        /*
+        * sibings()
+        * next()
+        * nextAll()
+        * nextUntil()
+        * prev()
+        * preAll()
+        * preUntil()
+        * */
+        $(document).ready(function(){
+            /*$("h4").siblings().css({border:"3px solid #ff0000"});*/ /*修改除本身的，同级元素全部修改*/
+           /* $("h4").next().css({border:"3px solid #ff0000"});*/  /*修改除本身的，下一个元素*/
+           /* $("h4").nextAll().css({border:"3px solid #ff0000"});*/  /*修改除本身的，下边所有的元素修改*/
+           /* $("h4").nextUntil("h6").css({border:"3px solid #ff0000"});*/  /*下边元素区间内的元素起修改 h4到h6元素之间起作用*/
+           /* $("h4").prev().css({border:"3px solid #ff0000"});*/  /*修改除本身的，h4上一个元素的样式*/
+           /* $("h4").prevAll().css({border:"3px solid #ff0000"}); */ /*修改除本身的，h4前边全部元素的样式*/
+            $("h4").prevUntil("p").css({border:"3px solid #ff0000"});  /*区间内的元素起作用，h4前边全部元素与p元素之间的样式*/
+        })
+    </script>
+</head>
+<body>
+    <div class="bd">
+        <p>P</p>
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+        <h6>H6</h6>
+    </div>
+</body>
+</html>

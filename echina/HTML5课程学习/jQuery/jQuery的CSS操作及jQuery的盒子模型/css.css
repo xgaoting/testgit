@@ -1,0 +1,15 @@
+.style{
+    width: 100px;
+    height: 100px;
+    background-color: #000099;
+}
+
+.style1{
+    width: 100px;
+    height: 100px;
+    background-color: #e67e22;
+}
+
+.style2{
+    border-radius: 50%;
+}
