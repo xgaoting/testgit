@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../../css/jquery-ui.min.css">
+    <script src="../../js/jquery-3.1.1.min.js"></script>
+    <script src="../../js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#Rect1").draggable();
+            $("#Rect2").droppable();
+            $("#Rect2").on("drop",function(event,ui){
+                alert(event+"qo "+ui)
+                $(this).text("drop事件");
+            })
+        })
+    </script>
+</head>
+<body>
+<div style="width: 100px;height: 100px;border: 2px solid #ff0000" id="Rect1"></div>
+<div style="width: 200px;height: 200px;border: 2px solid #ff0000" id="Rect2"></div>
+</body>
+</html>
