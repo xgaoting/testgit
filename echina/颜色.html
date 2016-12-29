@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            /*整个网页的背景色*/
+            background-color: #ffff00;
+        }
+        p{
+            /*字体颜色*/
+            color:red;
+        }
+        div{
+            width: 100px;/*设定宽度*/
+            height: 100px;/*设定高度*/
+            /*背景色*/
+            background-color: blue;
+        }
+        /*利用颜色名称表示颜色*
+       .name{
+            color: black;
+        }
+        /*十六进制定义表示颜色*/
+       .hex{
+            color: #ff0000;
+        }
+        /*rgb表示颜色，每一个颜色值最大为255，例如rgb(255,255,255)*/
+        .rgb{
+            color: rgb(200,155,150);
+        }
+        /*rgba表示颜色，每一个颜色值最大为255，例如rgb(255,255,255,.2) 最后一个a为透明色，取值在0~1之间，值越大越清晰，反之值越小越模糊*/
+        .rgba{
+            color: rgba(0,0,0,.5);
+        }
+       /* HSB（HSL） 色调饱和度亮度模式以另外一种不同的理念进行色彩的调配H色调 0~360 圆环形式 以角度表示S 饱和度 0~1 之间的小数L 亮度 0~1 之间的小数*/
+        .hsl{
+            color: hsl(240,50%,50%);
+        }
+        .hsla{
+            color: hsla(240,50%,50%,.4);/*最后一个a为透明度，值越小越模糊*/
+        }
+    </style>
+</head>
+<body>
+    <p>这是有看见看见了解了解</p>
+    <div></div>
+    <!--颜色属性介绍-->
+        <!--名称定义颜色  比如red ,white ,yellow,blue, black等等-->
+    <span class="name">这是颜色名称表示颜色</span><br/>
+    <!--十六进制定义表示颜色-->
+    <span class="hex">这是十六进制表示颜色</span><br/>
+    <!--RGB表示颜色-->
+    <span class="rgb">RGB表示颜色</span><br/>
+    <!--RGBA-->
+    <span class="rgba">RGBA表示颜色</span><br/>
+    <!--hsl-->
+    <span class="hsl">HSL颜色</span><br/>
+    <!--hsla-->
+    <span class="hsla">HSLa颜色</span><br/>
+</body>
+</html>
